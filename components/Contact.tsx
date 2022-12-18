@@ -2,8 +2,6 @@ import {
   BsLinkedin,
   BsGithub,
   BsInstagram,
-  BsTwitter,
-  BsFacebook,
   BsTelegram,
 } from "react-icons/bs";
 

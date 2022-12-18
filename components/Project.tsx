@@ -26,13 +26,13 @@ const Project = () => {
   return (
     <>
       {data && (
-        <div className="grid grid-cols-1 gap-2">
+        <div className="grid grid-cols-1 gap-2 m-0.5">
           {data.map(
             ({ topics, ...item }: RepoProperties) =>
               topics.includes("portfolio") && (
                 <div
                   key={item.id}
-                  className="card shadow bg-[#287785] text-slate-200"
+                  className="card shadow bg-[#287785] text-slate-200 rounded-xl"
                 >
                   <div className="card-body">
                     <h2 className="card-title">

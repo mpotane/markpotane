@@ -15,7 +15,7 @@ const NavBar = () => {
       <nav className="shadow fixed w-full z-10 bg-base-100/95 backdrop-blur-sm">
         <div className="flex flex-wrap items-center justify-between md:mx-20 p-5">
           <p className="text-lg font-semibold">
-            Mark<span className="text-green-600"> Edzel </span>Potane
+            Mark Edzel Potane
           </p>
           <div className="hidden md:block">
             <ul className="flex gap-x-12">
@@ -44,12 +44,12 @@ const NavBar = () => {
             </ul>
           </div>
           <div className="md:hidden">
-            <button
+            <div
               className="border border-gray-600 rounded px-2 py-0.5"
               onClick={handleClick}
             >
               {!menu ? <TbMenu size={23} /> : <TbX size={23} />}
-            </button>
+            </div>
             <div
               className={
                 menu
