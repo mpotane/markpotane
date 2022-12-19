@@ -1,7 +1,7 @@
 {
- "name": "App",
- "short_name": "App",
- "start_url": "\/index.html",
+ "name": "mpotane",
+ "short_name": "mpotane",
+ "start_url": "/",
  "display": "standalone",
  "background_color": "#ffffff",
  "theme_color": "#ffffff",

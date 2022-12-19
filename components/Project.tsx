@@ -37,7 +37,7 @@ const Project = () => {
                   <div className="card-body">
                     <h2 className="card-title">
                       <a
-                        className="text-green-400 font-extrabold inline-block relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-green-600 before:via-sky-400 before:to-purple-500 hover:before:w-full hover:before:opacity-100"
+                        className="font-extrabold inline-block relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-green-600 before:via-sky-400 before:to-purple-500 hover:before:w-full hover:before:opacity-100"
                         target="_blank"
                         href={item.html_url}
                         rel="noreferrer"
@@ -61,7 +61,7 @@ const Project = () => {
                             <p className="text-sm">{item.forks_count}</p>
                           </div>
                         </div>
-                        <div className="badge badge-outline badge-accent shadow-md shadow-accent">
+                        <div className="badge badge-outline text-[#e1e858] shadow-md shadow-[#e1e858]">
                           {item.language}
                         </div>
                       </div>

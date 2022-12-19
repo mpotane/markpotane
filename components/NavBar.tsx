@@ -20,6 +20,7 @@ const NavBar = () => {
               <li className="hover:scale-105 cursor-pointer">
                 <Link
                   href="/"
+                  activeClass="text-success"
                   spy={true}
                   to="home"
                   smooth={true}
@@ -31,6 +32,7 @@ const NavBar = () => {
               <li className="hover:scale-105 cursor-pointer">
                 <Link
                   href="/"
+                  activeClass="text-success"
                   spy={true}
                   to="about"
                   smooth={true}
