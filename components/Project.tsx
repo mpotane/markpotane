@@ -32,7 +32,7 @@ const Project = () => {
               topics.includes("portfolio") && (
                 <div
                   key={item.id}
-                  className="card shadow bg-[#287785] text-slate-200 rounded-xl"
+                  className="card shadow bg-[#287785] text-white rounded-xl"
                 >
                   <div className="card-body">
                     <h2 className="card-title">
@@ -61,7 +61,7 @@ const Project = () => {
                             <p className="text-sm">{item.forks_count}</p>
                           </div>
                         </div>
-                        <div className="badge badge-outline text-[#e1e858] shadow-md shadow-[#e1e858]">
+                        <div className="badge badge-outline border-[#e1e858] border-2 shadow-sm shadow-[#e1e858]">
                           {item.language}
                         </div>
                       </div>
