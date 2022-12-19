@@ -15,7 +15,7 @@ const About = () => {
       className="min-h-screen w-full p-10 md:p-20 bg-base-200"
     >
       <Suspense fallback={<Loading />}>
-        <h3 className="text-center py-12">About Me.</h3>
+        <h2 className="text-center py-12">About Me.</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-5">
           <Projects />
           <Contact />

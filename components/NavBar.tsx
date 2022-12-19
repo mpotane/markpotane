@@ -14,14 +14,12 @@ const NavBar = () => {
     <header>
       <nav className="shadow fixed w-full z-10 bg-base-100/95 backdrop-blur-sm">
         <div className="flex flex-wrap items-center justify-between md:mx-20 p-5">
-          <p className="text-lg font-semibold">
-            Mark Edzel Potane
-          </p>
+          <p className="text-lg font-semibold">Mark Edzel Potane</p>
           <div className="hidden md:block">
             <ul className="flex gap-x-12">
               <li className="hover:scale-105 cursor-pointer">
                 <Link
-                  activeClass="text-green-600"
+                  href="/"
                   spy={true}
                   to="home"
                   smooth={true}
@@ -32,7 +30,7 @@ const NavBar = () => {
               </li>
               <li className="hover:scale-105 cursor-pointer">
                 <Link
-                  activeClass="text-green-600"
+                  href="/"
                   spy={true}
                   to="about"
                   smooth={true}
@@ -53,19 +51,19 @@ const NavBar = () => {
             <div
               className={
                 menu
-                  ? "fixed right-0 px-5 py-2 flex flex-col gap-2 top-[72px] w-full h-screen ease-in-out duration-300 bg-base-100"
-                  : "fixed right-[-100%] px-5 py-2 flex flex-col gap-2 top-[72px] w-full h-screen ease-in-out duration-200 bg-base-100"
+                  ? "fixed right-0 px-5 py-2 flex flex-col gap-2 top-[69px] w-full h-screen ease-in-out duration-300 bg-base-100"
+                  : "fixed right-[-100%] px-5 py-2 flex flex-col gap-2 top-[69px] w-full h-screen ease-in-out duration-200 bg-base-100"
               }
             >
               <span className="pt-2 text-sm">
-                <Link to="home" smooth={true} duration={500}>
+                <Link href="/" to="home" smooth={true} duration={500}>
                   <button className="btn btn-block" onClick={handleClick}>
                     Home
                   </button>
                 </Link>
               </span>
               <span className="pb-2 text-sm">
-                <Link to="about" smooth={true} duration={500}>
+                <Link href="/" to="about" smooth={true} duration={500}>
                   <button className="btn btn-block" onClick={handleClick}>
                     About Me
                   </button>

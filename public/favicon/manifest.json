@@ -1,5 +1,10 @@
 {
  "name": "App",
+ "short_name": "App",
+ "start_url": "\/index.html",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#ffffff",
  "icons": [
   {
    "src": "\/favicon/android-icon-36x36.png",
@@ -36,6 +41,13 @@
    "sizes": "192x192",
    "type": "image\/png",
    "density": "4.0"
+  },
+  {
+    "src": "\/favicon/android-icon-512x512.png",
+    "sizes": "512x512",
+    "type": "image\/png",
+    "density": "6.0",
+    "purpose": "any maskable"
   }
  ]
 }

@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
           <div className="flex justify-center">
             <a
-              className="underline underline-offset-4 text-purple-600 font-semibold"
+              className="underline underline-offset-4 text-fuchsia-700 font-semibold"
               href="https://t.me/mpotane"
               rel="noreferrer"
               target="_blank"
