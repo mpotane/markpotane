@@ -10,11 +10,7 @@ const Contact = () => {
         </h2>
         <div className="grid grid-cols-1 gap-3 place-items-center mx-10 my-5 cursor-pointer">
           <div className="bg-base-300 w-full py-10 px-5 rounded-xl min-h-full">
-            <a
-              href="https://blogs.mpotane.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://blog.mpotane.com" target="_blank" rel="noreferrer">
               <span className="flex flex-wrap gap-2 justify-center items-end">
                 <SiHashnode />
                 Blogs
