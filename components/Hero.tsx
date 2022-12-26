@@ -13,7 +13,7 @@ const Hero = () => {
             Talk is cheap. Show me the code!
           </h1>
           <p className="mb-8 leading-relaxed text-sm">
-              I&apos;m a <span className="rounded-md px-1 text-primary-content bg-gradient-to-br from-accent to-primary-focus">Full Stack Software Engineer</span> with a passion for building
+              I&apos;m a <span className="rounded-md px-1 text-primary-content bg-gradient-to-br from-accent to-primary-focus">Software Engineer</span> with a passion for building
             scalable and maintainable web applications.
           </p>
           <div className="flex justify-center">
