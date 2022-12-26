@@ -3,6 +3,7 @@ import Seo from "../components/Seo";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import About from "../components/About";
+import TeckStack from "../components/TechStack";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Seo />
       <NavBar />
       <Hero />
+      <TeckStack />
       <About />
       <Footer />
     </>

@@ -34,6 +34,18 @@ const NavBar = () => {
                   href="/"
                   activeClass="text-success"
                   spy={true}
+                  to="skill"
+                  smooth={true}
+                  duration={500}
+                >
+                  Skillset
+                </Link>
+              </li>
+              <li className="hover:scale-105 cursor-pointer">
+                <Link
+                  href="/"
+                  activeClass="text-success"
+                  spy={true}
                   to="about"
                   smooth={true}
                   duration={500}
@@ -64,7 +76,14 @@ const NavBar = () => {
                   </button>
                 </Link>
               </span>
-              <span className="pb-2 text-sm">
+              <span className="pt-2 text-sm">
+                <Link href="/" to="skill" smooth={true} duration={500}>
+                  <button className="btn btn-block" onClick={handleClick}>
+                    Skillset
+                  </button>
+                </Link>
+              </span>
+              <span className="pt-2 text-sm">
                 <Link href="/" to="about" smooth={true} duration={500}>
                   <button className="btn btn-block" onClick={handleClick}>
                     About Me
