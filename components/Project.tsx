@@ -1,4 +1,4 @@
-import useSWR from "swr";
+import useSWR, { Fetcher } from "swr";
 import Loading from "./Loading";
 import { TbStar, TbGitFork } from "react-icons/tb";
 
@@ -14,8 +14,9 @@ interface RepoProperties {
 }
 
 const Project = () => {
-  const fetcher = (url: string) => fetch(url).then((res) => res.json());
-  const { data, error, isLoading } = useSWR(
+  const fetcher: Fetcher<RepoProperties[], string> = (url: string) =>
+    fetch(url).then((res) => res.json());
+  const { data, error, isLoading } = useSWR<RepoProperties[], Error>(
     "https://api.github.com/users/mpotane/repos?sort=updated",
     fetcher
   );
