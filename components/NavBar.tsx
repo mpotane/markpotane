@@ -69,21 +69,21 @@ const NavBar = () => {
                   : "fixed right-[-100%] px-5 py-2 flex flex-col gap-2 top-[69px] w-full h-screen ease-in-out duration-200 bg-base-100"
               }
             >
-              <span className="pt-2 text-sm">
+              <span className="text-sm">
                 <Link href="/" to="home" smooth={true} duration={500}>
                   <button className="btn btn-block" onClick={handleClick}>
                     Home
                   </button>
                 </Link>
               </span>
-              <span className="pt-2 text-sm">
+              <span className="text-sm">
                 <Link href="/" to="skill" smooth={true} duration={500}>
                   <button className="btn btn-block" onClick={handleClick}>
                     Skillset
                   </button>
                 </Link>
               </span>
-              <span className="pt-2 text-sm">
+              <span className="text-sm">
                 <Link href="/" to="about" smooth={true} duration={500}>
                   <button className="btn btn-block" onClick={handleClick}>
                     About Me
