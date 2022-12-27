@@ -28,8 +28,15 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Create a function that will be called when the button is clicked
   const handleClick = () => {
-    document.body.style.overflow = menu ? "unset" : "hidden";
+    // Get the html element
+    const html = document.querySelector("html");
+    // If the html element exists, then toggle the overflow property
+    if (html) {
+      html.style.overflow = menu ? "unset" : "hidden";
+    }
+    // Toggle the menu state
     setMenu(!menu);
   };
 
