@@ -10,11 +10,9 @@ const Hero = () => {
         <span className="py-1 px-4 text-sm text-primary-content font-semibold rounded-lg border-2 border-success shadow-[0_0_4px_2px] shadow-success">
           @mpotane
         </span>
-        <div className="pb-10" />
-        <h1 className="text-3xl md:text-5xl font-black">
+        <h1 className="text-3xl md:text-5xl font-black pt-10 pb-5">
           Talk is cheap. Show me the code!
         </h1>
-        <div className="pt-5" />
         <p className="leading-relaxed text-sm">
           I&apos;m a{" "}
           <span className="rounded-md px-1 text-primary-content bg-gradient-to-br from-accent to-primary-focus">
@@ -23,8 +21,7 @@ const Hero = () => {
           with a passion for building scalable and maintainable web
           applications.
         </p>
-        <div className="mb-8" />
-        <div className="flex justify-center">
+        <div className="pt-8 flex justify-center">
           <a
             className="underline underline-offset-4 text-info font-semibold"
             href="https://t.me/mpotane"
