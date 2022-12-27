@@ -2,24 +2,16 @@ import Hero from "../components/Hero";
 import Seo from "../components/Seo";
 import Footer from "../components/Footer";
 import About from "../components/About";
-import dynamic from "next/dynamic";
-import Loading from "../components/Loading";
-
-const Skillset = dynamic(() => import("../components/TechStack"), {
-  loading: () => <Loading />,
-});
-
-const Nav = dynamic(() => import("../components/NavBar"), {
-  loading: () => <Loading />,
-});
+import NavBar from "../components/NavBar";
+import TechStack from "../components/TechStack";
 
 const Home = () => {
   return (
     <>
       <Seo />
-      <Nav />
+      <NavBar />
       <Hero />
-      <Skillset />
+      <TechStack />
       <About />
       <Footer />
     </>

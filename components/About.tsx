@@ -1,14 +1,6 @@
-import dynamic from "next/dynamic";
-import Loading from "./Loading";
+import Project from "./Project";
+import Contact from "./Contact";
 import { Element } from "react-scroll";
-
-const Projects = dynamic(() => import("./Project"), {
-  loading: () => <Loading />,
-});
-
-const Contacts = dynamic(() => import("./Contact"), {
-  loading: () => <Loading />,
-});
 
 const About = () => {
   return (
@@ -18,8 +10,8 @@ const About = () => {
     >
       <h2 className="text-center py-12">About Me.</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-5">
-        <Projects />
-        <Contacts />
+        <Project />
+        <Contact />
       </div>
     </Element>
   );
