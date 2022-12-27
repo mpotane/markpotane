@@ -9,7 +9,9 @@ const Home = () => {
     <>
       <Seo />
       <NavBar />
-      <Hero />
+      <article>
+        <Hero />
+      </article>
       <TechStack />
       <About />
       <p className="grid place-items-center py-3">Made with 💚 by @mpotane</p>

@@ -1,9 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TbMenu, TbX } from "react-icons/tb";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
+
+  // When the component is first mounted, add a scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get the vertical offset in pixels
+      const offset = window.scrollY;
+      const nav = document.querySelector("nav");
+
+      // If the offset is greater than 100, add the class
+      if (offset > 100) {
+        nav?.classList.add("bg-base-100/95", "backdrop-blur-sm");
+      } else {
+        // Otherwise, remove the class
+        nav?.classList.remove("bg-base-100/95", "backdrop-blur-sm");
+      }
+    };
+
+    // Add the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // When the component is unmounted, remove the event listener
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleClick = () => {
     document.body.style.overflow = menu ? "unset" : "hidden";
@@ -12,7 +35,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className="shadow fixed w-full z-10 bg-base-100/95 backdrop-blur-sm">
+      <nav className="fixed w-full z-10">
         <div className="flex flex-wrap items-center justify-between md:mx-20 p-5">
           <p className="text-lg font-semibold">Mark Edzel Potane</p>
           <div className="hidden md:block">

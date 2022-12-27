@@ -21,7 +21,7 @@ const Hero = () => {
           with a passion for building scalable and maintainable web
           applications.
         </p>
-        <div className="pt-8 flex justify-center">
+        <div className="pt-8">
           <a
             className="underline underline-offset-4 text-info font-semibold"
             href="https://t.me/mpotane"

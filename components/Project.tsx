@@ -36,7 +36,7 @@ const Project = () => {
                   className="card shadow bg-[#287785] text-white rounded-xl"
                 >
                   <div className="card-body">
-                    <h2 className="card-title">
+                    <span className="card-title">
                       <a
                         className="font-extrabold inline-block relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-green-600 before:via-sky-400 before:to-purple-500 hover:before:w-full hover:before:opacity-100"
                         target="_blank"
@@ -48,18 +48,18 @@ const Project = () => {
                       <div className="badge badge-error border-2 border-black hover:border-none">
                         NEW
                       </div>
-                    </h2>
+                    </span>
                     <p>{item.description}</p>
                     {item.language && (
                       <div className="flex justify-between items-center px-1 py-3">
                         <div className="grid grid-cols-2 gap-2 place-items-center">
                           <div className="grid grid-cols-2 place-items-center text-purple-300">
                             <TbStar />
-                            <p className="text-sm">{item.stargazers_count}</p>
+                            <span className="text-sm">{item.stargazers_count}</span>
                           </div>
                           <div className="grid grid-cols-2 place-items-center text-orange-300">
                             <TbGitFork />
-                            <p className="text-sm">{item.forks_count}</p>
+                            <span className="text-sm">{item.forks_count}</span>
                           </div>
                         </div>
                         <div className="badge badge-outline border-[#e1e858] border-2 shadow-sm shadow-[#e1e858]">
