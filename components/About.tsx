@@ -1,6 +1,10 @@
-import Project from "./Project";
+import { Suspense } from "react";
 import Contact from "./Contact";
 import { Element } from "react-scroll";
+import dynamic from "next/dynamic";
+import Loading from "./Loading";
+
+const Project = dynamic(() => import("./Project"), { suspense: true });
 
 const About = () => {
   return (
@@ -10,7 +14,9 @@ const About = () => {
     >
       <h2 className="text-center py-12">About Me.</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-5">
-        <Project />
+        <Suspense fallback={<Loading />}>
+          <Project />
+        </Suspense>
         <Contact />
       </div>
     </Element>

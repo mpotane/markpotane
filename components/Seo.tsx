@@ -7,7 +7,7 @@ const Seo = () => {
       <title>Mark Edzel Potane</title>
       <meta
         name="description"
-        content="Mark Edzel Potane's personal website. Full Stack Software Engineer. Passionate about building scalable and maintainable web applications."
+        content="Hello, I'm Mark Edzel Potane. A software engineer based in the Philippines. Passionate about building scalable and maintainable web applications."
       />
       <meta name="author" content="Mark Edzel Potane" />
       <meta name="robots" />
@@ -16,7 +16,7 @@ const Seo = () => {
       <meta property="og:url" content="https://mpotane.com" />
       <meta
         property="og:description"
-        content="Mark Edzel Potane's personal website. Full Stack Software Engineer. Passionate about building scalable and maintainable web applications."
+        content="Hello, I'm Mark Edzel Potane. A software engineer based in the Philippines. Passionate about building scalable and maintainable web applications."
       />
       <meta property="og:site_name" content="mpotane" />
       <meta property="og:locale" content="en_US" />
