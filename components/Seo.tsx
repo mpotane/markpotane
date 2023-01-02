@@ -12,6 +12,7 @@ const Seo = () => {
       <meta name="author" content="Mark Edzel Potane" />
       <meta name="robots" />
       <meta property="og:title" content="Mark Edzel Potane" />
+      <meta property="og:image" content="https://mpotane.com/image.png" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://mpotane.com" />
       <meta
@@ -20,6 +21,8 @@ const Seo = () => {
       />
       <meta property="og:site_name" content="mpotane" />
       <meta property="og:locale" content="en_US" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <link
         rel="apple-touch-icon"
         sizes="57x57"
