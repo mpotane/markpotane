@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { TbMenu, TbX } from "react-icons/tb";
 import { Link } from "react-scroll";
 
-const NavBar = () => {
+export default function NavBar() {
   const [menu, setMenu] = useState(false);
 
   // When the component is first mounted, add a scroll event listener
@@ -126,6 +126,4 @@ const NavBar = () => {
       </nav>
     </header>
   );
-};
-
-export default NavBar;
+}

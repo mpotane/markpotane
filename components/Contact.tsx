@@ -1,6 +1,6 @@
 import { SiLinkedin, SiGithub, SiHashnode, SiPolywork } from "react-icons/si";
 
-const Contact = () => {
+export default function Contact() {
   return (
     <div className="relative m-1">
       <div className="absolute -inset-0.5 bg-gradient-to-r from-green-600 to-purple-600 rounded-lg blur opacity-75 transition duration-1000"></div>
@@ -53,6 +53,4 @@ const Contact = () => {
       </div>
     </div>
   );
-};
-
-export default Contact;
+}

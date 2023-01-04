@@ -6,7 +6,7 @@ import Loading from "./Loading";
 
 const Project = dynamic(() => import("./Project"), { suspense: true });
 
-const About = () => {
+export default function About() {
   return (
     <Element
       name="about"
@@ -21,6 +21,4 @@ const About = () => {
       </div>
     </Element>
   );
-};
-
-export default About;
+}

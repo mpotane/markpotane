@@ -1,29 +1,10 @@
-import useSWR, { Fetcher } from "swr";
-import Loading from "./Loading";
 import { TbStar, TbGitFork } from "react-icons/tb";
+import { useContext } from "react";
+import { RepoProperties } from "../interface/interface";
+import { RepoContext } from "../pages/index";
 
-interface RepoProperties {
-  id: number;
-  name: string;
-  description: string;
-  language: string;
-  html_url: string;
-  topics: string[];
-  stargazers_count: number;
-  forks_count: number;
-}
-
-const Project = () => {
-  const fetcher: Fetcher<RepoProperties[], string> = (url: string) =>
-    fetch(url).then((res) => res.json());
-  const { data, error, isLoading } = useSWR<RepoProperties[], Error>(
-    "https://api.github.com/users/mpotane/repos?sort=updated",
-    fetcher
-  );
-
-  if (error) return <div>Cannot retrieve data</div>;
-  if (isLoading) return <Loading />;
-
+export default function Project() {
+  const data = useContext(RepoContext);
   return (
     <>
       {data && (
@@ -55,7 +36,9 @@ const Project = () => {
                         <div className="grid grid-cols-2 gap-2 place-items-center">
                           <div className="grid grid-cols-2 place-items-center text-purple-300">
                             <TbStar />
-                            <span className="text-sm">{item.stargazers_count}</span>
+                            <span className="text-sm">
+                              {item.stargazers_count}
+                            </span>
                           </div>
                           <div className="grid grid-cols-2 place-items-center text-orange-300">
                             <TbGitFork />
@@ -75,6 +58,4 @@ const Project = () => {
       )}
     </>
   );
-};
-
-export default Project;
+}
