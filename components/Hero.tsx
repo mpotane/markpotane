@@ -11,7 +11,8 @@ export default function Hero() {
           <span className="py-1 px-4 text-sm text-primary-content font-semibold rounded-lg border-2 border-success shadow-[0_0_4px_2px] shadow-success">
             @mpotane
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold pt-10 pb-5">
+          <div className="p-4" />
+          <h1 className="text-3xl md:text-5xl font-bold pb-5">
             Talk is cheap. Show me the code!
           </h1>
           <p className="leading-relaxed text-sm">
