@@ -23,31 +23,31 @@ export default function TeckStack() {
           <div className="p-[1px] rounded-xl w-full bg-gradient-to-br from-violet-600 to-orange-800">
             <div className="px-5 py-10 w-full rounded-xl flex flex-wrap flex-col gap-2 justify-center items-center bg-base-300">
               <SiReact size={40} />
-              Nextjs
+              Reactjs
             </div>
           </div>
           <div className="p-[1px] rounded-xl w-full bg-gradient-to-br from-violet-600 to-orange-800">
             <div className="px-5 py-10 w-full rounded-xl flex flex-wrap flex-col gap-2 justify-center items-center bg-base-300">
               <SiJavascript size={40} />
-              Nextjs
+              JavaScript
             </div>
           </div>
           <div className="p-[1px] rounded-xl w-full bg-gradient-to-br from-violet-600 to-orange-800">
             <div className="px-5 py-10 w-full rounded-xl flex flex-wrap flex-col gap-2 justify-center items-center bg-base-300">
               <SiTailwindcss size={40} />
-              Nextjs
+              Tailwind
             </div>
           </div>
           <div className="p-[1px] rounded-xl w-full bg-gradient-to-br from-violet-600 to-orange-800">
             <div className="px-5 py-10 w-full rounded-xl flex flex-wrap flex-col gap-2 justify-center items-center bg-base-300">
               <SiTypescript size={40} />
-              Nextjs
+              Typescript
             </div>
           </div>
           <div className="p-[1px] rounded-xl w-full bg-gradient-to-br from-violet-600 to-orange-800">
             <div className="px-5 py-10 w-full rounded-xl flex flex-wrap flex-col gap-2 justify-center items-center bg-base-300">
               <SiPrisma size={40} />
-              Nextjs
+              Prisma
             </div>
           </div>
         </div>
