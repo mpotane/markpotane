@@ -12,7 +12,9 @@ export default function Contact() {
           <div className="bg-base-300 w-full py-10 px-5 rounded-xl min-h-full">
             <a href="https://blog.mpotane.com" target="_blank" rel="noreferrer">
               <span className="flex flex-wrap gap-2 justify-center items-end">
-                <SiHashnode />
+                <div className=" text-blue-700">
+                  <SiHashnode />
+                </div>
                 Blogs
               </span>
             </a>
@@ -20,7 +22,9 @@ export default function Contact() {
           <div className="bg-base-300 w-full py-10 px-5 rounded-xl">
             <a href="https://work.mpotane.com" target="_blank" rel="noreferrer">
               <span className="flex flex-wrap gap-2 justify-center items-end">
-                <SiPolywork />
+                <div className="text-orange-500">
+                  <SiPolywork />
+                </div>
                 Works
               </span>
             </a>
@@ -32,7 +36,9 @@ export default function Contact() {
               rel="noreferrer"
             >
               <span className="flex flex-wrap gap-2 justify-center items-end">
-                <SiLinkedin />
+                <div className=" text-sky-600">
+                  <SiLinkedin />
+                </div>
                 LinkedIn
               </span>
             </a>
@@ -44,7 +50,9 @@ export default function Contact() {
               rel="noreferrer"
             >
               <span className="flex flex-wrap gap-2 justify-center items-end">
-                <SiGithub />
+                <div className="text-white">
+                  <SiGithub />
+                </div>
                 Github
               </span>
             </a>
