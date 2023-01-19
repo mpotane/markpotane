@@ -5,7 +5,7 @@ export default function Contact() {
     <div className="relative m-1">
       <div className="absolute -inset-0.5 bg-gradient-to-r from-green-600 to-purple-600 rounded-lg blur opacity-75 transition duration-1000"></div>
       <div className="relative leading-none bg-base-200 rounded-xl h-full">
-        <h2 className="text-center font-medium text-2xl pt-10 italic">
+        <h2 className="text-center font-extrabold text-2xl pt-10">
           Socials:
         </h2>
         <div className="grid grid-cols-1 gap-3 place-items-center mx-10 my-5 cursor-pointer">
