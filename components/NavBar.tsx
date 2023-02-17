@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { TbMenu, TbX } from "react-icons/tb";
 import { Link } from "react-scroll";
+import Image from "next/image";
+import { IMAGES_MANIFEST } from "next/dist/shared/lib/constants";
 
 export default function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -44,7 +46,19 @@ export default function NavBar() {
     <header>
       <nav className="fixed w-full z-10">
         <div className="flex flex-wrap items-center justify-between md:mx-20 p-5">
-          <p className="text-lg font-semibold">Mark Edzel Potane</p>
+          <div className="flex gap-2">
+            <div className="avatar">
+              <div className="w-7 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <Image
+                  src="/gt.jpg"
+                  alt="mpotane profile"
+                  width={400}
+                  height={400}
+                />
+              </div>
+            </div>
+            <p className="text-lg font-semibold">@mpotane</p>
+          </div>
           <div className="hidden md:block">
             <ul className="flex gap-x-12">
               <li className="hover:scale-105 cursor-pointer">

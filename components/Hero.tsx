@@ -1,26 +1,21 @@
 import { Element } from "react-scroll";
 import Balancer from "react-wrap-balancer";
-import { SiTelegram } from "react-icons/si";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
     <Element
       name="home"
-      className="w-full min-h-screen grid place-items-center"
+      className="w-full grid place-items-center"
     >
-      <article>
+      <article className="pt-10">
         <div className="text-center p-10 md:p-20 md:mx-5">
-          <span className="py-1 px-4 text-sm text-primary-content font-semibold rounded-lg border-2 border-success shadow-[0_0_4px_2px] shadow-success">
-            @mpotane
-          </span>
-          <br />
-          <br />
           <Balancer>
-            <h1 className="text-3xl md:text-5xl font-bold">
-              Talk is cheap. Show me the code!
+            <h1 className={`text-6xl md:text-8xl font-black ${styles.colorize}`}>
+              MARK EDZEL
             </h1>
             <br />
-            <p className="leading-relaxed text-sm">
+            <p className="leading-relaxed text-sm md:text-lg">
               I&apos;m a{" "}
               <span className="rounded-md px-1 text-primary-content bg-gradient-to-br from-accent to-primary-focus">
                 Software Engineer
@@ -38,9 +33,8 @@ export default function Hero() {
               rel="noreferrer"
               target="_blank"
             >
-              LET&apos;S CHAT!
+              <button className={styles.BTN}>LET&apos;S CHAT!</button>
             </a>
-            <SiTelegram />
           </div>
         </div>
       </article>
