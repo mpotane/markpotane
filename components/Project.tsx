@@ -14,7 +14,7 @@ export default function Project() {
               topics.includes("portfolio") && (
                 <div
                   key={item.id}
-                  className="card shadow bg-[#287785] text-white rounded-xl"
+                  className="card shadow shadow-[#1a555b] bg-[#1a555b] text-slate-300 rounded-xl"
                 >
                   <div className="card-body">
                     <span className="card-title">
@@ -34,7 +34,7 @@ export default function Project() {
                     {item.language && (
                       <div className="flex justify-between items-center px-1 py-3">
                         <div className="grid grid-cols-2 gap-2 place-items-center">
-                          <div className="grid grid-cols-2 place-items-center text-purple-300">
+                          <div className="grid grid-cols-2 place-items-center text-purple-400">
                             <TbStar />
                             <span className="text-sm">
                               {item.stargazers_count}
