@@ -14,7 +14,7 @@ export default function Project() {
               topics.includes("portfolio") && (
                 <div
                   key={item.id}
-                  className="card border border-purple-900 bg-neutral text-slate-300 rounded-xl"
+                  className="card border border-[#9568f7] bg-gradient-to-br from-slate-900 to-gray-800 text-slate-300 rounded-xl"
                 >
                   <div className="card-body">
                     <span className="card-title">
