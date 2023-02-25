@@ -23,12 +23,12 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  '@next/font': 13.1.6
+  '@next/font': 13.2.1
   '@types/node': 18.14.1
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
-  axios: 1.3.3
-  daisyui: 2.50.2_gbtt6ss3tbiz4yjtvdr6fbrj44
+  axios: 1.3.4
+  daisyui: 2.51.0_gbtt6ss3tbiz4yjtvdr6fbrj44
   eslint: 8.34.0
   eslint-config-next: 13.2.1_7kw3g6rralp5ps6mg3uyzz6azm
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
@@ -37,7 +37,7 @@ dependencies:
   react-icons: 4.7.1_react@18.2.0
   react-scroll: 1.8.9_biqbaboplfbrettd7655fr4n2y
   react-wrap-balancer: 0.4.0_react@18.2.0
-  swr: 2.0.3_react@18.2.0
+  swr: 2.0.4_react@18.2.0
   typescript: 4.9.5
 
 devDependencies:
@@ -102,8 +102,8 @@ packages:
       glob: 7.1.7
     dev: false
 
-  /@next/font/13.1.6:
-    resolution: {integrity: sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==}
+  /@next/font/13.2.1:
+    resolution: {integrity: sha512-4sergLt7xp9+mZuKME/xM4tLlHGTcmL7naCq0qCTcAlof6NnttshYgiLOdhSiy0NcI+/yM3BjvdEk++O96UzTg==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.2.1:
@@ -508,8 +508,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /axios/1.3.3:
-    resolution: {integrity: sha512-eYq77dYIFS77AQlhzEL937yUBSepBfPIe8FcgEDN35vMNZKMrs81pgnyrQpwfy4NF4b4XWX1Zgx7yX+25w8QJA==}
+  /axios/1.3.4:
+    resolution: {integrity: sha512-toYm+Bsyl6VC5wSkfkbbNB6ROv7KY93PEBBL6xyDczaIHasAiv4wPqQ/c4RjoQzipxRD2W5g21cOqQulZ7rHwQ==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
@@ -551,7 +551,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001457
-      electron-to-chromium: 1.4.305
+      electron-to-chromium: 1.4.311
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
 
@@ -660,8 +660,8 @@ packages:
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
 
-  /daisyui/2.50.2_gbtt6ss3tbiz4yjtvdr6fbrj44:
-    resolution: {integrity: sha512-CzyTsqdkpP2Zwk5Fl+1pFfL7XewRn/COm4TyKx4DbdITpzADMe01j6YZRG/D0kAOyd7t4rXA3zvkqNc7Ak9ukQ==}
+  /daisyui/2.51.0_gbtt6ss3tbiz4yjtvdr6fbrj44:
+    resolution: {integrity: sha512-HGM89+VzZ/KDsH4cK6OhizIscXOVzkEENynovL6bXPfJDOKZQz0V2CuTGEoQmN8FeuGxrZiz/He1P9p+E9Qr5A==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -786,8 +786,8 @@ packages:
       esutils: 2.0.3
     dev: false
 
-  /electron-to-chromium/1.4.305:
-    resolution: {integrity: sha512-WETy6tG0CT5gm1O+xCbyapWNsCcmIvrn4NHViIGYo2AT8FV2qUCXdaB+WqYxSv/vS5mFqhBYnfZAAkVArjBmUg==}
+  /electron-to-chromium/1.4.311:
+    resolution: {integrity: sha512-RoDlZufvrtr2Nx3Yx5MB8jX3aHIxm8nRWPJm3yVvyHmyKaRvn90RjzB6hNnt0AkhS3IInJdyRfQb4mWhPvUjVw==}
 
   /emoji-regex/9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
@@ -2367,8 +2367,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /swr/2.0.3_react@18.2.0:
-    resolution: {integrity: sha512-sGvQDok/AHEWTPfhUWXEHBVEXmgGnuahyhmRQbjl9XBYxT/MSlAzvXEKQpyM++bMPaI52vcWS2HiKNaW7+9OFw==}
+  /swr/2.0.4_react@18.2.0:
+    resolution: {integrity: sha512-4GUiTjknRUVuw4MWUHR7mzJ9G/DWL+yZz/TgWDfiA0OZ9tL6qyrTkN2wPeboBpL3OJTkej3pexh3mWCnv8cFkQ==}
     engines: {pnpm: '7'}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0
