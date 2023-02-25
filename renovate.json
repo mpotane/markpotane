@@ -9,7 +9,22 @@
       "matchSourceUrls": [
         "https://github.com/zeit/next.js",
         "https://github.com/vercel/next.js"
-      ]
+      ],
+      "groupName": "all dependencies",
+      "groupSlug": "all",
+      "lockFileMaintenance": {
+        "enabled": false
+      },
+      "packageRules": [
+        {
+          "groupName": "all dependencies",
+          "groupSlug": "all",
+          "matchPackagePatterns": [
+            "*"
+          ]
+        }
+      ],
+      "separateMajorMinor": false
     }
   ],
   "schedule": [
