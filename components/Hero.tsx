@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import Balancer from "react-wrap-balancer";
 import styles from "./Hero.module.css";
+import localFont from "next/font/local"
 
 const hubot = localFont({
   src: './Hubot-Sans.woff2'
