@@ -2,6 +2,10 @@ import { Element } from "react-scroll";
 import Balancer from "react-wrap-balancer";
 import styles from "./Hero.module.css";
 
+const hubot = localFont({
+  src: './Hubot-Sans.woff2'
+})
+
 export default function Hero() {
   return (
     <Element
@@ -11,8 +15,8 @@ export default function Hero() {
       <article className="pt-10">
         <div className="text-center p-10 md:p-20 md:mx-5">
           <Balancer>
-            <h1 className={`text-6xl md:text-8xl font-black ${styles.colorize}`}>
-              MARK EDZEL
+            <h1 className={`text-5xl md:text-7xl lg:text-[7rem] font-bold md:font-extrabold lg:font-black ${styles.colorize} ${hubot.className}`}>
+              MARK EDZEL POTANE
             </h1>
             <br />
             <p className="leading-relaxed text-sm md:text-lg">
