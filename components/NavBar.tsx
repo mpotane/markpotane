@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { TbMenu, TbX } from "react-icons/tb";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import { IMAGES_MANIFEST } from "next/dist/shared/lib/constants";
 
 export default function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -46,7 +45,7 @@ export default function NavBar() {
     <header>
       <nav className="fixed w-full z-10">
         <div className="flex flex-wrap items-center justify-between md:mx-20 p-5">
-          <div className="flex gap-2">
+          <div className="flex gap-4">
             <div className="avatar">
               <div className="w-7 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <Image
