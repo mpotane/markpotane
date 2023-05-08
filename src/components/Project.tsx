@@ -1,10 +1,24 @@
 import { TbStar, TbGitFork } from "react-icons/tb";
-import { useContext } from "react";
 import { RepoProperties } from "../interface/interface";
-import { RepoContext } from "../pages/index";
 
-export default function Project() {
-  const data = useContext(RepoContext);
+async function getData() {
+  const res = await fetch(
+    "https://api.github.com/users/mpotane/repos?sort=created"
+  );
+  // filter data to only include repos with topics that include "portfolio"
+  // const data = res.json().filter((repo: RepoProperties) =>
+  //   repo.topics.includes("portfolio")
+  // );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+export default async function Project() {
+  const data = (await getData()) as unknown as RepoProperties[];
   return (
     <>
       {data && (

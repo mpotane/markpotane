@@ -1,22 +1,20 @@
-import { Element } from "react-scroll";
 import Balancer from "react-wrap-balancer";
 import styles from "./Hero.module.css";
-import localFont from "next/font/local"
+import localFont from "next/font/local";
 
 const hubot = localFont({
-  src: './Hubot-Sans.woff2'
-})
+  src: "./Hubot-Sans.woff2",
+});
 
 export default function Hero() {
   return (
-    <Element
-      name="home"
-      className="w-full grid place-items-center"
-    >
-      <article className="pt-10">
+    <>
+      <article className="pt-10" id="hero">
         <div className="text-center p-10 md:p-20 md:mx-5">
           <Balancer>
-            <h1 className={`text-5xl md:text-7xl lg:text-[7rem] font-bold md:font-extrabold lg:font-black ${styles.colorize} ${hubot.className}`}>
+            <h1
+              className={`text-5xl md:text-7xl lg:text-[7rem] font-bold md:font-extrabold lg:font-black ${styles.colorize} ${hubot.className}`}
+            >
               MARK EDZEL POTANE
             </h1>
             <br />
@@ -43,6 +41,6 @@ export default function Hero() {
           </div>
         </div>
       </article>
-    </Element>
+    </>
   );
 }

@@ -6,12 +6,11 @@ import {
   SiTypescript,
   SiPrisma,
 } from "react-icons/si";
-import { Element } from "react-scroll";
 
 export default function TeckStack() {
   return (
-    <Element name="skill" className="w-full bg-base-300">
-      <div className="p-10 md:p-20 md:mx-5 text-center">
+    <>
+      <div className="p-10 md:p-20 md:mx-5 text-center" id="tstack">
         <p className="pb-5 font-extrabold text-2xl">⚙️ Tech Stack:</p>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-7 place-items-center">
           <div className="p-[1px] rounded-xl w-full bg-gradient-to-br from-pink-500 to-yellow-500">
@@ -64,6 +63,6 @@ export default function TeckStack() {
           </div>
         </div>
       </div>
-    </Element>
+    </>
   );
 }

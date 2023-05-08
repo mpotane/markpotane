@@ -1,6 +1,6 @@
+"use client";
 import { useEffect, useState } from "react";
 import { TbMenu, TbX } from "react-icons/tb";
-import { Link } from "react-scroll";
 import Image from "next/image";
 
 export default function NavBar() {
@@ -61,40 +61,13 @@ export default function NavBar() {
           <div className="hidden md:block">
             <ul className="flex gap-x-12">
               <li className="hover:scale-105 cursor-pointer">
-                <Link
-                  href="/"
-                  activeClass="text-success"
-                  spy={true}
-                  to="home"
-                  smooth={true}
-                  duration={500}
-                >
-                  {"< Home />"}
-                </Link>
+                <a href="#hero">{"< Home />"}</a>
               </li>
               <li className="hover:scale-105 cursor-pointer">
-                <Link
-                  href="/"
-                  activeClass="text-success"
-                  spy={true}
-                  to="skill"
-                  smooth={true}
-                  duration={500}
-                >
-                  Skillset
-                </Link>
+                <a href="#tstack">Skillset</a>
               </li>
               <li className="hover:scale-105 cursor-pointer">
-                <Link
-                  href="/"
-                  activeClass="text-success"
-                  spy={true}
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                >
-                  About Me.
-                </Link>
+                <a href="#aboutpge">About Me.</a>
               </li>
             </ul>
           </div>
@@ -113,25 +86,25 @@ export default function NavBar() {
               }
             >
               <span className="text-sm">
-                <Link href="/" to="home" smooth={true} duration={500}>
+                <a href="#hero">
                   <button className="btn btn-block" onClick={handleClick}>
                     Home
                   </button>
-                </Link>
+                </a>
               </span>
               <span className="text-sm">
-                <Link href="/" to="skill" smooth={true} duration={500}>
+                <a href="#tstack">
                   <button className="btn btn-block" onClick={handleClick}>
                     Skillset
                   </button>
-                </Link>
+                </a>
               </span>
               <span className="text-sm">
-                <Link href="/" to="about" smooth={true} duration={500}>
+                <a href="#aboutpge">
                   <button className="btn btn-block" onClick={handleClick}>
                     About Me
                   </button>
-                </Link>
+                </a>
               </span>
             </div>
           </div>
