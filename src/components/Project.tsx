@@ -1,5 +1,5 @@
 import { TbStar, TbGitFork } from "react-icons/tb";
-import { RepoProperties } from "../interface/interface";
+import { RepoProperties } from "@/interface/interface";
 
 async function getData() {
   const res = await fetch(
