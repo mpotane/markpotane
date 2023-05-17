@@ -41,6 +41,14 @@ export default function NavBar() {
     setMenu(!menu);
   };
 
+  function handleScrollElem(id: string) {
+    const elem = document.getElementById(id);
+    if (!elem) {
+      throw new Error("No element found with id " + id);
+    }
+    elem.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <header>
       <nav className="fixed w-full z-10">
@@ -61,13 +69,13 @@ export default function NavBar() {
           <div className="hidden md:block">
             <ul className="flex gap-x-12">
               <li className="hover:scale-105 cursor-pointer">
-                <a href="#hero">{"< Home />"}</a>
+                <button onClick={() => handleScrollElem('hero')}>{"< Home />"}</button>
               </li>
               <li className="hover:scale-105 cursor-pointer">
-                <a href="#tstack">Skillset</a>
+                <button onClick={() => handleScrollElem("tstack")}>Skillset</button>
               </li>
               <li className="hover:scale-105 cursor-pointer">
-                <a href="#aboutpge">About Me.</a>
+                <button onClick={() => handleScrollElem("aboutpge")}>About Me.</button>
               </li>
             </ul>
           </div>
@@ -86,25 +94,29 @@ export default function NavBar() {
               }
             >
               <span className="text-sm">
-                <a href="#hero">
-                  <button className="btn btn-block" onClick={handleClick}>
+                  <button className="btn btn-block" onClick={() => {
+                    handleClick()
+                    handleScrollElem('hero')
+                  }
+                  }>
                     Home
                   </button>
-                </a>
               </span>
               <span className="text-sm">
-                <a href="#tstack">
-                  <button className="btn btn-block" onClick={handleClick}>
+                  <button className="btn btn-block" onClick={() => {
+                    handleClick()
+                    handleScrollElem('tstack')
+                    }}>
                     Skillset
                   </button>
-                </a>
               </span>
               <span className="text-sm">
-                <a href="#aboutpge">
-                  <button className="btn btn-block" onClick={handleClick}>
+                  <button className="btn btn-block" onClick={() => {
+                    handleClick()
+                    handleScrollElem('aboutpge')
+                  }}>
                     About Me
                   </button>
-                </a>
               </span>
             </div>
           </div>
