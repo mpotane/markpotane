@@ -58,7 +58,7 @@ export default function TeckStack() {
               <div className="text-orange-400">
                 <SiAmazonaws size={40} />
               </div>
-              Amazon Web Service
+              AmazonWS
             </div>
           </div>
         </div>
