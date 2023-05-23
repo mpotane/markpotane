@@ -14,7 +14,7 @@ export default function NavBar() {
       const nav = document.querySelector("nav");
 
       // If the offset is greater than 100, add the class
-      if (offset > 100) {
+      if (offset > 5) {
         nav?.classList.add("bg-base-100/95", "backdrop-blur-sm");
       } else {
         // Otherwise, remove the class
