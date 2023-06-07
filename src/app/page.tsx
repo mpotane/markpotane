@@ -35,17 +35,11 @@ export const metadata: Metadata = {
     images: ["/image.png"],
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+    noarchive: true,
+    noimageindex: true,
+    notranslate: true,
   },
 };
 
