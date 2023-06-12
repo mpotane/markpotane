@@ -14,6 +14,9 @@ module.exports = {
     fontFamily: {
       sans: ['var(--font-inter)', ...fontFamily.sans],
     },
+    container: {
+      center: true,
+    },
     extend: {},
   },
   plugins: [require("daisyui")],

@@ -3,7 +3,7 @@ import type { RepoProperties } from "@/types/ghdata";
 
 async function getData() {
   const res = await fetch(
-    "https://api.github.com/users/mpotane/repos?sort=created"
+    "https://api.github.com/users/mpotane/repos?sort=created",
   );
 
   if (!res.ok) {
@@ -17,7 +17,7 @@ export default async function Project() {
   const data = (await getData()) as unknown as RepoProperties[];
   //    ^?
   return (
-    <>
+    <section className="col-span-2">
       {data && (
         <div className="grid grid-cols-1 gap-2 m-0.5">
           {data.map(
@@ -25,7 +25,7 @@ export default async function Project() {
               topics.includes("portfolio") && (
                 <div
                   key={item.id}
-                  className="card border border-[#9568f7] bg-gradient-to-br from-slate-900 to-gray-800 text-slate-300 rounded-xl"
+                  className="card border border-teal-800 text-slate-300 rounded-lg"
                 >
                   <div className="card-body">
                     <span className="card-title">
@@ -37,7 +37,7 @@ export default async function Project() {
                       >
                         {item.name}
                       </a>
-                      <div className="badge badge-error border-2 border-black hover:border-none">
+                      <div className="badge badge-error">
                         NEW
                       </div>
                     </span>
@@ -56,7 +56,7 @@ export default async function Project() {
                             <span className="text-sm">{item.forks_count}</span>
                           </div>
                         </div>
-                        <div className="badge badge-outline border-[#e1e858] border-2 shadow-sm shadow-[#e1e858]">
+                        <div className="badge badge-outline border-blue-500 border-2 shadow-sm shadow-blue-500">
                           {item.language}
                         </div>
                       </div>
@@ -67,6 +67,6 @@ export default async function Project() {
           )}
         </div>
       )}
-    </>
+    </section>
   );
 }

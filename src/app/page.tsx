@@ -1,9 +1,5 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import NavBar from "@/components/NavBar";
-import TechStack from "@/components/TechStack";
-import Footer from "@/components/Footer";
 import type { Metadata } from "next";
+import Container from "@/components/Container";
 
 export const metadata: Metadata = {
   title: "Mark Edzel Potane",
@@ -45,14 +41,6 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      <NavBar />
-      <main>
-        <Hero />
-        <TechStack />
-        <About />
-      </main>
-      <Footer />
-    </>
-  );
+    <Container />
+  )
 }
