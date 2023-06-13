@@ -19,7 +19,7 @@ export default async function Project() {
   return (
     <section className="col-span-2">
       {data && (
-        <div className="grid grid-cols-1 gap-2 m-0.5">
+        <div className="grid grid-cols-1 gap-2 my-0.5">
           {data.map(
             ({ topics, ...item }: RepoProperties) =>
               topics.includes("portfolio") && (
