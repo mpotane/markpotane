@@ -25,7 +25,7 @@ export default function Contact() {
             <div className="text-blue-700">
               <SiHashnode size={25} />
             </div>
-            Blogs
+            Blog
           </div>
         </a>
         <a href="https://work.mpotane.com" target="_blank" rel="noreferrer">
