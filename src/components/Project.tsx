@@ -3,7 +3,7 @@ import type { RepoProperties } from "@/types/ghdata";
 
 async function getData() {
   const res = await fetch(
-    "https://api.github.com/users/mpotane/repos?sort=created",
+    "https://api.github.com/users/mpotane/repos",
   );
 
   if (!res.ok) {
