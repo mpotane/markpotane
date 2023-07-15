@@ -42,12 +42,12 @@ export default function TeckStack() {
           </div>
           TailwindCSS
         </div>
-        <div className="flex flex-col justify-center items-center">
+        {/* <div className="flex flex-col justify-center items-center">
           <div className=" text-sky-500">
             <SiMicrosoftazure size={25} />
           </div>
           Azure
-        </div>
+        </div> */}
       </div>
     </section>
   );
