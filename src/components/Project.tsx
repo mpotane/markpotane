@@ -1,30 +1,73 @@
 import { TbStar, TbGitFork } from "react-icons/tb";
-import type { RepoProperties } from "@/types/ghdata";
+import { getClient } from "@/lib/client";
+import { gql } from "@apollo/client";
 
-async function getData() {
-  const res = await fetch(
-    "https://api.github.com/users/mpotane/repos",
-  );
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
+type ProjectProps = {
+  id: string,
+  name: string,
+  stargazerCount: number,
+  forkCount: number,
+  description: string,
+  languages: {
+    edges: [
+      {
+        node: {
+          name: string,
+          color: string,
+        }
+      }
+    ]
   }
-
-  return res.json();
+  url: string,
 }
 
+const getProjects = gql`
+    query GetProjects {
+    viewer {
+        login
+        pinnedItems(first: 3) {
+        edges {
+            node {
+            ... on Repository {
+                id
+                name
+                stargazerCount
+                forkCount
+                description
+                languages(first: 1, orderBy: {field: SIZE, direction: DESC}) {
+                edges {
+                    node {
+                    name
+                    color
+                    }
+                }
+                }
+                url
+            }
+            }
+        }
+        }
+    }
+}
+`;
+
 export default async function Project() {
-  const data = (await getData()) as unknown as RepoProperties[];
-  //    ^?
+
+  const { data } = await getClient().query({
+    query: getProjects
+  });
+
   return (
     <section className="col-span-2">
       {data && (
         <div className="grid grid-cols-1 gap-2 my-0.5">
-          {data.map(
-            ({ topics, ...item }: RepoProperties) =>
-              topics.includes("portfolio") && (
+          
+          {data.viewer.pinnedItems.edges.map(
+            ({node}: {
+              node: ProjectProps
+            }) => (
                 <div
-                  key={item.id}
+                  key={node.id}
                   className="card border border-teal-800 text-slate-300 rounded-lg"
                 >
                   <div className="card-body">
@@ -32,32 +75,34 @@ export default async function Project() {
                       <a
                         className="font-extrabold inline-block relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-green-600 before:via-sky-400 before:to-purple-500 hover:before:w-full hover:before:opacity-100"
                         target="_blank"
-                        href={item.html_url}
+                        href={node.url}
                         rel="noreferrer"
                       >
-                        {item.name}
+                        {node.name}
                       </a>
                       <div className="badge badge-error">
                         NEW
                       </div>
                     </span>
-                    <p>{item.description}</p>
-                    {item.language && (
+                    <p>{node.description}</p>
+                    {node.languages.edges[0].node.name && (
                       <div className="flex justify-between items-center px-1 py-3">
                         <div className="grid grid-cols-2 gap-2 place-items-center">
                           <div className="grid grid-cols-2 place-items-center text-purple-400">
                             <TbStar />
                             <span className="text-sm">
-                              {item.stargazers_count}
+                              {node.stargazerCount}
                             </span>
                           </div>
                           <div className="grid grid-cols-2 place-items-center text-orange-300">
                             <TbGitFork />
-                            <span className="text-sm">{item.forks_count}</span>
+                            <span className="text-sm">{node.forkCount}</span>
                           </div>
                         </div>
-                        <div className="badge badge-outline border-blue-500 border-2 shadow-sm shadow-blue-500">
-                          {item.language}
+                        <div className="badge badge-outline border-2" style={{
+                          borderColor: node.languages.edges[0].node.color,
+                        }}>
+                          {node.languages.edges[0].node.name}
                         </div>
                       </div>
                     )}
