@@ -1,7 +1,7 @@
 import { HttpLink } from "@apollo/client";
 import {
-  NextSSRInMemoryCache,
   NextSSRApolloClient,
+  NextSSRInMemoryCache,
 } from "@apollo/experimental-nextjs-app-support/ssr";
 import { registerApolloClient } from "@apollo/experimental-nextjs-app-support/rsc";
 
@@ -15,7 +15,7 @@ export const { getClient } = registerApolloClient(() => {
       // fetchOptions: { cache: "no-store" },
       headers: {
         authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-    },
+      },
     }),
   });
 });

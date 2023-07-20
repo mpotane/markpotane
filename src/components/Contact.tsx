@@ -1,10 +1,14 @@
-import { SiLinkedin, SiGithub, SiHashnode, SiPolywork } from "react-icons/si";
+import { SiGithub, SiHashnode, SiLinkedin, SiPolywork } from "react-icons/si";
 
 export default function Contact() {
   return (
-    <section> 
+    <section>
       <div className="flex flex-wrap justify-center items-center gap-5 border border-teal-800 rounded-lg p-5">
-        <a href="https://www.linkedin.com/in/mpotane/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/mpotane/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className="flex flex-col justify-center items-center">
             <div className="text-blue-500">
               <SiLinkedin size={25} />

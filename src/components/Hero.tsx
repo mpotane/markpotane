@@ -18,8 +18,10 @@ export default function Hero() {
           </div>
           <div>
             <h1>Mark Edzel Potane</h1>
-            <Balancer>I&apos;m a Software Engineer with a passion for building scalable and maintainable web
-                applications.</Balancer>
+            <Balancer>
+              I&apos;m a Software Engineer with a passion for building scalable
+              and maintainable web applications.
+            </Balancer>
           </div>
         </div>
       </div>
