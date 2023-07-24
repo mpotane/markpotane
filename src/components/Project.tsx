@@ -58,14 +58,14 @@ export default async function Project() {
 
   return (
     <section className="col-span-2">
+      <div className="px-8">
+        <h4>📦 Projects and Repositories</h4>
+      </div>
       {data && (
         <div className="grid grid-cols-1 gap-2 my-0.5">
           {data.viewer.pinnedItems.edges.map(
             ({ node }: { node: ProjectProps }) => (
-              <div
-                key={node.id}
-                className="card border border-teal-800 text-slate-300 rounded-lg"
-              >
+              <div key={node.id} className="card text-slate-300">
                 <div className="card-body">
                   <span className="card-title">
                     <a
