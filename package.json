@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "3.8.0-rc.1",
-    "@apollo/experimental-nextjs-app-support": "0.0.0-commit-7dad495",
+    "@apollo/experimental-nextjs-app-support": "0.4.1",
     "@types/node": "20.4.4",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
