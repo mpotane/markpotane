@@ -6,7 +6,7 @@ export default function Blog() {
       <div className="pl-5">
         <h4>📝 Blogs</h4>
       </div>
-      <div className="flex flex-colcd p-5 py-9">
+      <div className="flex flex-col p-5 py-9">
         <a
           className="link link-info link-hover"
           href="https://blog.mpotane.com/client-side-data-fetching-in-nextjs"
