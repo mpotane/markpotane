@@ -10,9 +10,7 @@ export default function Container() {
     <main className="container max-w-screen-md mx-auto px-5 py-5">
       <div className="grid grid-cols-1 gap-2">
         <Hero />
-        <div className="px-72 py-2">
-          <hr className=" border-gray-700 border-dashed" />
-        </div>
+          <hr className="border-gray-700 border-dashed mx-44 sm:mx-64 md:mx-72 my-2" />
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 gap-y-2">
           <TeckStack />
           <Contact />
