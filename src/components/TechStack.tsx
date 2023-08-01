@@ -14,37 +14,37 @@ export default function TeckStack() {
         <h4>🛠️ Tools and Technology</h4>
       </div>
       <div className="flex flex-wrap justify-start items-center gap-5 p-5">
-        <div className="flex flex-col justify-center items-center w-32 h-20 border border-teal-800">
+        <div className="flex flex-col justify-center items-center w-32 h-20 border border-accent">
           <div className="text-white">
             <TbBrandNextjs size={25} />
           </div>
           Nextjs
         </div>
-        <div className="flex flex-col justify-center items-center w-32 h-20 border border-teal-800">
+        <div className="flex flex-col justify-center items-center w-32 h-20 border border-accent">
           <div className="text-sky-400">
             <SiReact size={25} />
           </div>
           Reactjs
         </div>
-        <div className="flex flex-col justify-center items-center w-32 h-20 border border-teal-800">
+        <div className="flex flex-col justify-center items-center w-32 h-20 border border-accent">
           <div className="text-yellow-300">
             <SiJavascript size={25} />
           </div>
           JavaScript
         </div>
-        <div className="flex flex-col justify-center items-center w-32 h-20 border border-teal-800">
+        <div className="flex flex-col justify-center items-center w-32 h-20 border border-accent">
           <div className="text-blue-500">
             <SiTypescript size={25} />
           </div>
           TypeScript
         </div>
-        <div className="flex flex-col justify-center items-center w-32 h-20 border border-teal-800">
+        <div className="flex flex-col justify-center items-center w-32 h-20 border border-accent">
           <div className="text-emerald-600">
             <SiTailwindcss size={25} />
           </div>
           TailwindCSS
         </div>
-        <div className="flex flex-col justify-center items-center w-32 h-20 border border-teal-800">
+        <div className="flex flex-col justify-center items-center w-32 h-20 border border-accent">
           <div className="text-white">
             <SiVercel size={25} />
           </div>

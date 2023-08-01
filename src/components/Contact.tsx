@@ -12,7 +12,7 @@ export default function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="flex flex-col justify-center items-center w-20 h-20 border border-teal-800">
+          <div className="flex flex-col justify-center items-center w-20 h-20 border border-accent">
             <div className="text-blue-500">
               <SiLinkedin size={25} />
             </div>
@@ -20,7 +20,7 @@ export default function Contact() {
           </div>
         </a>
         <a href="https://github.com/mpotane" target="_blank" rel="noreferrer">
-          <div className="flex flex-col justify-center items-center w-20 h-20 border border-teal-800">
+          <div className="flex flex-col justify-center items-center w-20 h-20 border border-accent">
             <div className="text-white">
               <SiGithub size={25} />
             </div>
@@ -28,7 +28,7 @@ export default function Contact() {
           </div>
         </a>
         <a href="https://blog.mpotane.com" target="_blank" rel="noreferrer">
-          <div className="flex flex-col justify-center items-center w-20 h-20 border border-teal-800">
+          <div className="flex flex-col justify-center items-center w-20 h-20 border border-accent">
             <div className="text-blue-700">
               <SiHashnode size={25} />
             </div>
@@ -36,7 +36,7 @@ export default function Contact() {
           </div>
         </a>
         <a href="https://work.mpotane.com" target="_blank" rel="noreferrer">
-          <div className="flex flex-col justify-center items-center w-20 h-20 border border-teal-800">
+          <div className="flex flex-col justify-center items-center w-20 h-20 border border-accent">
             <div className="text-amber-600">
               <SiPolywork size={25} />
             </div>
