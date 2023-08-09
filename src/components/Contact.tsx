@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section>
       <div className="px-5">
-        <h4>📣 Socials</h4>
+        <h2>📣 Socials</h2>
       </div>
       <div className="flex flex-wrap justify-start items-center gap-5 p-5">
         <a

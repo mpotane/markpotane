@@ -4,7 +4,7 @@ export default function Blog() {
   return (
     <section className="pl-1">
       <div className="pl-5">
-        <h4>📝 Blogs</h4>
+        <h3>📝 Blogs</h3>
       </div>
       <div className="flex flex-col p-5 py-9">
         <a

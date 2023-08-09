@@ -11,7 +11,7 @@ export default function TeckStack() {
   return (
     <section className="col-span-2">
       <div className="px-5">
-        <h4>🛠️ Tools and Technology</h4>
+        <h2>🛠️ Tools and Technology</h2>
       </div>
       <div className="flex flex-wrap justify-start items-center gap-5 p-5">
         <div className="flex flex-col justify-center items-center w-32 h-20 border border-accent">

@@ -59,7 +59,7 @@ export default async function Project() {
   return (
     <section className="col-span-2">
       <div className="px-8">
-        <h4>📦 Projects and Repositories</h4>
+        <h3>📦 Projects and Repositories</h3>
       </div>
       {data && (
         <div className="grid grid-cols-1 gap-2 my-0.5">
