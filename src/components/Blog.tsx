@@ -27,10 +27,10 @@ const data = [
 export default function Blog() {
   return (
     <section className="pl-1">
-      <div className="pl-5">
+      <div className="pl-5 mb-[.15rem]">
         <h3>📝 Blogs</h3>
       </div>
-      <div className="flex flex-col p-5 py-9 gap-2">
+      <div className="flex flex-col p-5 py-9 gap-2 border border-neutral-focus rounded lg:h-[95.5%]">
         {data.map((item) => (
           <a
             key={item.title}

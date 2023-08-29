@@ -1,4 +1,3 @@
-import Balancer from "react-wrap-balancer";
 import Image from "next/image";
 
 export default function Hero() {
@@ -17,10 +16,9 @@ export default function Hero() {
         </div>
         <div>
           <h1 className="text-slate-50 font-medium">Mark Edzel Potane</h1>
-          <Balancer>
-            I&apos;m a Software Engineer with a passion for building scalable
-            and maintainable web applications.
-          </Balancer>
+          <p>
+            I&apos;m a Software Engineer with a passion for building scalable and maintainable web applications.
+          </p>
         </div>
       </div>
     </section>
