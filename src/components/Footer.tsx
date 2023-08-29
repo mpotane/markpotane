@@ -1,10 +1,8 @@
 export default function Footer() {
   return (
-    <footer>
-      <div className="flex justify-center items-center">
-        <button className="btn btn-sm lowercase btn-block">
-          Made with 💚 by @mpotane
-        </button>
+    <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+      <div>
+        <p>Made with 💚 by @mpotane</p>
       </div>
     </footer>
   );
