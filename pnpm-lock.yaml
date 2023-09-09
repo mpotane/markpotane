@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@apollo/client':
-    specifier: 3.8.2
-    version: 3.8.2(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 3.8.3
+    version: 3.8.3(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0)
   '@apollo/experimental-nextjs-app-support':
     specifier: 0.4.2
-    version: 0.4.2(@apollo/client@3.8.2)(next@13.4.19)(react@18.2.0)
+    version: 0.4.2(@apollo/client@3.8.3)(next@13.4.19)(react@18.2.0)
   '@types/node':
     specifier: 20.5.9
     version: 20.5.9
@@ -66,8 +66,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /@apollo/client@3.8.2(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-SSxRTHlHdlR65mvV5j5e3JkYs9z/eFQfJPgSfqTeKa3jgHKofBaMb+UWxJPInqV5MqBFAkPFt8fYEBZwM7oGZA==}
+  /@apollo/client@3.8.3(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-mK86JM6hCpMEBGDgdO9U8ZYS8r9lPjXE1tVGpJMdSFUsIcXpmEfHUAbbFpPtYmxn8Qa7XsYy0dwDaDhpf4UUPw==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
       graphql-ws: ^5.5.5
@@ -102,14 +102,14 @@ packages:
       zen-observable-ts: 1.2.5
     dev: false
 
-  /@apollo/experimental-nextjs-app-support@0.4.2(@apollo/client@3.8.2)(next@13.4.19)(react@18.2.0):
+  /@apollo/experimental-nextjs-app-support@0.4.2(@apollo/client@3.8.3)(next@13.4.19)(react@18.2.0):
     resolution: {integrity: sha512-7NBsicjlTwKUferqz7oLPZ4XqoYwuxKZqKO8xTcbryBzWwt/Ehj8MIhMzzR/V5rzeE6BmYEtxijtQsueWPWxKw==}
     peerDependencies:
       '@apollo/client': '>=3.8.0-rc || ^3.8.0'
       next: ^13.4.1
       react: ^18
     dependencies:
-      '@apollo/client': 3.8.2(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0)
+      '@apollo/client': 3.8.3(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0)
       next: 13.4.19(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       server-only: 0.0.1
