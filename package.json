@@ -2,6 +2,7 @@
   "name": "markpotane",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -9,8 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "3.8.4",
-    "@apollo/experimental-nextjs-app-support": "0.4.2",
+    "@apollo/client": "latest",
+    "@apollo/experimental-nextjs-app-support": "^0.4.3",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "bun-types": "^1.0.2",
@@ -24,6 +25,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@types/node": "20.6.3",
     "autoprefixer": "^10.4.14",
     "daisyui": "^3.2.1",
     "postcss": "^8.4.26",
