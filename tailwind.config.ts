@@ -1,7 +1,6 @@
 import { fontFamily } from "tailwindcss/defaultTheme"
-import type { Config } from "tailwindcss"
+import type { Config } from 'tailwindcss'
 
-/** @type {import('tailwindcss').Config} */
 export default {
   daisyui: {
     themes: ["dark"],
@@ -21,4 +20,5 @@ export default {
     extend: {},
   },
   plugins: [require("daisyui")],
-} satisfies Config;
+} satisfies Config
+

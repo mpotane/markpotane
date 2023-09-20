@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
@@ -8,5 +9,3 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
 }
-
-export default nextConfig
