@@ -1,7 +1,7 @@
-import { fontFamily } from "tailwindcss/defaultTheme"
-import type { Config } from 'tailwindcss'
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
-export default {
+
+module.exports = {
   daisyui: {
     themes: ["dark"],
   },
@@ -20,5 +20,5 @@ export default {
     extend: {},
   },
   plugins: [require("daisyui")],
-} satisfies Config
+};
 
