@@ -1,3 +1,6 @@
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+
 import { HttpLink } from "@apollo/client";
 import {
   NextSSRApolloClient,
