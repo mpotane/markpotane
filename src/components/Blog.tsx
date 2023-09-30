@@ -14,13 +14,13 @@ const data = [
   {
     title: "How I set up my dev environment.",
     url: "https://blog.mpotane.com/how-i-set-up-my-dev-environment",
-    color: "text-pink-500",
+    color: "text-pink-300",
   },
   {
     title:
       "Learn how to install and configure copilot in neovim using lazynvim",
     url: "https://blog.mpotane.com/learn-how-to-install-and-configure-copilot-in-neovim-using-lazynvim",
-    color: "text-violet-500",
+    color: "text-violet-300",
   },
 ];
 
