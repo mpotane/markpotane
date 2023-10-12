@@ -2,8 +2,8 @@ import { HiArrowUpRight } from "react-icons/hi2";
 
 const data = [
   {
-    title: "Client-side data fetching in Nextjs",
-    url: "https://blog.mpotane.com/client-side-data-fetching-in-nextjs",
+    title: "How to Fetch Data on the Client Side with Next.js: A Comparison of SWR, React Query and Apollo Client",
+    url: "https://blog.mpotane.com/how-to-fetch-data-on-the-client-side-with-nextjs-a-comparison-of-swr-react-query-and-apollo-client",
     color: "text-sky-500",
   },
   {
