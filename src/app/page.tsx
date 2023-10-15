@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     "Hello, I'm Mark Edzel Potane. A software engineer based in the Philippines. Passionate about building scalable and maintainable web applications.",
   metadataBase: new URL("https://mpotane.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Mark Edzel Potane",
     description:
