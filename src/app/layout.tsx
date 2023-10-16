@@ -17,6 +17,7 @@ export default function RootLayout({
         strategy="afterInteractive"
       />
       <Script src="./script.js" strategy="afterInteractive" />
+      <Script src="./tag.js" strategy="afterInteractive" />
       <body className={`${inter.variable} font-sans`}>{children}</body>
     </html>
   );
