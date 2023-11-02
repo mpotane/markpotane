@@ -1,8 +1,6 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import Script from "next/script";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+import { GeistSans } from 'geist/font'
 
 export default function RootLayout({
   children,
@@ -22,7 +20,7 @@ export default function RootLayout({
     })(window,document,'script','dataLayer','GTM-N2L95B2T');`,
         }}
       />
-      <body className={`${inter.variable} font-sans`}>
+      <body className={`${GeistSans.variable} font-sans`}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N2L95B2T"

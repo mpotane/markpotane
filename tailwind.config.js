@@ -12,7 +12,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["var(--font-inter)", ...fontFamily.sans],
+      sans: ["var(--font-geist-sans)", ...fontFamily.sans],
     },
     container: {
       center: true,
