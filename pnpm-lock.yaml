@@ -120,7 +120,7 @@ packages:
     resolution: {integrity: sha512-UrgLMUIW7SFmeJyLvqh0E8KRvo6Nd/zzbUFt0ENT3BRa7z7kGsCk7I+kZEZEAn13nqlTC3M4VPS6tOfvtLFhxQ==}
     peerDependencies:
       '@apollo/client': '>=3.8.0-rc || ^3.8.0'
-      next: ^13.4.1
+      next: ^13.4.1 || ^14.0.0
       react: ^18
     dependencies:
       '@apollo/client': 3.8.6(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
