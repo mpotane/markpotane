@@ -1,6 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
-import { GeistSans } from 'geist/font'
+import { GeistSans } from "geist/font";
 
 export default function RootLayout({
   children,
@@ -18,6 +18,18 @@ export default function RootLayout({
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-N2L95B2T');`,
+        }}
+      />
+      <Script
+        id="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Mark Edzel Potane",
+            url: "https://mpotane.com/",
+          }),
         }}
       />
       <body className={`${GeistSans.variable} font-sans`}>
