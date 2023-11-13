@@ -2,8 +2,8 @@ import { HiArrowUpRight } from "react-icons/hi2";
 
 const data = [
   {
-    title: "How to Fetch Data on the Client Side with Next.js: A Comparison of SWR, React Query and Apollo Client",
-    url: "https://blog.mpotane.com/how-to-fetch-data-on-the-client-side-with-nextjs-a-comparison-of-swr-react-query-and-apollo-client",
+    title: "Tips: How to Fetch Data on the Client Side with Next.js",
+    url: "https://blog.mpotane.com/tips-how-to-fetch-data-on-the-client-side-with-nextjs",
     color: "text-sky-500",
   },
   {
@@ -12,14 +12,14 @@ const data = [
     color: "text-yellow-500",
   },
   {
-    title: "How I set up my dev environment.",
-    url: "https://blog.mpotane.com/how-i-set-up-my-dev-environment",
+    title: "How to setup development environment: Tips and Tricks",
+    url: "https://blog.mpotane.com/how-to-setup-development-environment-tips-and-tricks",
     color: "text-pink-300",
   },
   {
     title:
-      "Learn how to install and configure copilot in neovim using lazynvim",
-    url: "https://blog.mpotane.com/learn-how-to-install-and-configure-copilot-in-neovim-using-lazynvim",
+      "Neovim: Learn How to Install and Configure Copilot",
+    url: "https://blog.mpotane.com/neovim-learn-how-to-install-and-configure-copilot",
     color: "text-violet-300",
   },
 ];
