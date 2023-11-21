@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Container from "@/components/Container";
 
 export const metadata: Metadata = {
-  title: "Mark Edzel Potane",
+  title: "Mark Edzel Potane | Personal Porfolio | SEO Specialist.",
   description:
-    "Hello, I'm Mark Edzel Potane. A software engineer based in the Philippines. Passionate about building scalable and maintainable web applications.",
+    "Explore the profile of Mark Edzel Potane, a talented SEO Specialist and Software Engineer hailing from the Philippines.",
   metadataBase: new URL("https://mpotane.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Mark Edzel Potane",
+    title: "Mark Edzel Potane | Personal Porfolio | SEO Specialist.",
     description:
-      "Hello, I'm Mark Edzel Potane. A software engineer based in the Philippines. Passionate about building scalable and maintainable web applications.",
+      "Explore the profile of Mark Edzel Potane, a talented SEO Specialist and Software Engineer hailing from the Philippines.",
     url: "/",
     siteName: "Mark Edzel Potane",
     images: [
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mark Edzel Potane",
+    title: "Mark Edzel Potane | Personal Porfolio | SEO Specialist.",
     description:
-      "Hello I'm Mark Edzel Potane. A software engineer based in the Philippines. Passionate about building scalable and maintainable web applications.",
+      "Explore the profile of Mark Edzel Potane, a talented SEO Specialist and Software Engineer hailing from the Philippines.",
     creator: "@mpotanedev",
     images: ["/image.png"],
   },
