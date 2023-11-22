@@ -1,6 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
-import { GeistSans } from "geist/font";
+import { GeistSans } from "geist/font/sans";
 
 export default function RootLayout({
   children,
