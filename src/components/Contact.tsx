@@ -35,7 +35,7 @@ export default function Contact() {
             Blog
           </div>
         </a>
-        <a href="https://work.mpotane.com" target="_blank" rel="noreferrer noopener">
+        <a href="https://work.mpotane.com" target="_blank" rel="nofollow noopener">
           <div className="flex flex-col justify-center items-center w-20 h-20">
             <div className="text-amber-600">
               <SiPolywork size={25} />
