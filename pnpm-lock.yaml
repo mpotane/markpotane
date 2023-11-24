@@ -54,10 +54,10 @@ devDependencies:
     version: 10.4.16(postcss@8.4.31)
   bun-types:
     specifier: ^1.0.7
-    version: 1.0.13
+    version: 1.0.14
   daisyui:
     specifier: ^4.0.0
-    version: 4.4.2(postcss@8.4.31)
+    version: 4.4.6(postcss@8.4.31)
   postcss:
     specifier: ^8.4.31
     version: 8.4.31
@@ -675,13 +675,13 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001564
-      electron-to-chromium: 1.4.591
+      electron-to-chromium: 1.4.593
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: true
 
-  /bun-types@1.0.13:
-    resolution: {integrity: sha512-QQH6NLAOU+2tWgQuDSAYBFy+kQwVhPJLB0Q38QLjCmFUZJEYCiiq7tzvU784LAIX2onzO6gr+gIGXt8yCt0cJw==}
+  /bun-types@1.0.14:
+    resolution: {integrity: sha512-hLVfM2fk8xSJeobfuPGilfvxM5gLtEy1bn7RJhrtw3u4OaC0kieXKYFFTVHU8jZ3hj8YyPLIFClIUodkFSrMBQ==}
     dev: true
 
   /busboy@1.6.0:
@@ -796,8 +796,8 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
-  /daisyui@4.4.2(postcss@8.4.31):
-    resolution: {integrity: sha512-Ecg5loskj9dkaAnTSK5Xn5jb24TqDlQIg/NJ025jCkw2S/zw12btjvLgY2Sv5Ws1DFVoVBRs3XYXyojZG7zVnw==}
+  /daisyui@4.4.6(postcss@8.4.31):
+    resolution: {integrity: sha512-Zum9dWsYufduID4IfwI1h/+qQIuoXBpVaG9l/rOlLOVbCmpvE7LQK/GDYE7YOT8NDXHOH+EqMqT8uzGqlbTFig==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
@@ -891,8 +891,8 @@ packages:
       esutils: 2.0.3
     dev: false
 
-  /electron-to-chromium@1.4.591:
-    resolution: {integrity: sha512-vLv/P7wwAPKQoY+CVMyyI6rsTp+A14KGtPXx92oz1FY41AAqa9l6Wkizcixg0LDuJgyeo8xgNN9+9hsnGp66UA==}
+  /electron-to-chromium@1.4.593:
+    resolution: {integrity: sha512-c7+Hhj87zWmdpmjDONbvNKNo24tvmD4mjal1+qqTYTrlF0/sNpAcDlU0Ki84ftA/5yj3BF2QhSGEC0Rky6larg==}
     dev: true
 
   /emoji-regex@9.2.2:
