@@ -19,18 +19,6 @@ export default function RootLayout({
     })(window,document,'script','dataLayer','GTM-N2L95B2T');`,
         }}
       />
-      <Script
-        id="structured-data"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Mark Edzel Potane",
-            url: "https://mpotane.com/",
-          }),
-        }}
-      />
       <body className={`${GeistSans.variable} font-sans`}>
         <noscript>
           <iframe
