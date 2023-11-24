@@ -65,7 +65,7 @@ export default async function Project() {
         <div className="grid grid-cols-1 gap-2 my-0.5">
           {data.viewer.pinnedItems.edges.map(
             ({ node }: { node: ProjectProps }) => (
-              <div key={node.id} className="card text-slate-300 border border-neutral-focus rounded">
+              <div key={node.id} className="card text-slate-300 border border-neutral rounded">
                 <div className="card-body">
                   <span className="card-title">
                     <a

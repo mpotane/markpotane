@@ -30,7 +30,7 @@ export default function Blog() {
       <div className="pl-6 mb-[.15rem]">
         <h3>📝 Blogs</h3>
       </div>
-      <div className="flex flex-col pl-6 pr-5 py-9 gap-2 border border-neutral-focus rounded lg:h-[95.5%]">
+      <div className="flex flex-col pl-6 pr-5 py-9 gap-2 border border-neutral rounded lg:h-[95.5%]">
         {data.map((item) => (
           <a
             key={item.title}

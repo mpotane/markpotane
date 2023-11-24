@@ -13,7 +13,7 @@ export default function TeckStack() {
       <div className="px-5">
         <h2>🛠️ Tools and Technology</h2>
       </div>
-      <div className="flex flex-wrap justify-start items-center gap-2 p-5 border border-neutral-focus rounded">
+      <div className="flex flex-wrap justify-start items-center gap-2 p-5 border border-neutral rounded">
         <div className="flex flex-col justify-center items-center w-32 h-20">
           <div className="text-white">
             <TbBrandNextjs size={25} />

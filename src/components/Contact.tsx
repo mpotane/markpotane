@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="px-5">
         <h2>📣 Socials</h2>
       </div>
-      <div className="flex flex-wrap justify-start items-center gap-2 p-5 border border-neutral-focus rounded">
+      <div className="flex flex-wrap justify-start items-center gap-2 p-5 border border-neutral rounded">
         <a
           href="https://www.linkedin.com/in/mpotane/"
           target="_blank"
