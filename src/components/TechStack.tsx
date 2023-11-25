@@ -1,10 +1,10 @@
 import { TbBrandNextjs } from "react-icons/tb";
 import {
-  SiJavascript,
   SiReact,
   SiTailwindcss,
   SiTypescript,
   SiVercel,
+  SiSemrush,
 } from "react-icons/si";
 
 export default function TeckStack() {
@@ -28,9 +28,9 @@ export default function TeckStack() {
         </div>
         <div className="flex flex-col justify-center items-center w-32 h-20">
           <div className="text-yellow-300">
-            <SiJavascript size={25} />
+            <SiSemrush size={25} />
           </div>
-          JavaScript
+          Semrush
         </div>
         <div className="flex flex-col justify-center items-center w-32 h-20">
           <div className="text-blue-500">
