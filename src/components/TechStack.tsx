@@ -27,7 +27,7 @@ export default function TeckStack() {
           Reactjs
         </div>
         <div className="flex flex-col justify-center items-center w-32 h-20">
-          <div className="text-yellow-300">
+          <div className="text-orange-300">
             <SiSemrush size={25} />
           </div>
           Semrush
