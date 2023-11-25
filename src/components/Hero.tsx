@@ -16,7 +16,7 @@ export default function Hero() {
         </div>
         <div>
           <h1 className="text-slate-50 font-medium">Mark Edzel Potane</h1>
-          <p className="text-justify">
+          <p>
             I specialize in SEO and also have a background in software
             engineering. I assist businesses in enhancing their online presence
             and building scalable and maintainable web solutions.{" "}
