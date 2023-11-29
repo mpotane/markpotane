@@ -25,10 +25,14 @@ export default function RootLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Mark Edzel Potane",
-            "alternateName": ["Mark Potane", "Mpotane", "Edzel Potane"],
-            "url": "https://mpotane.com/",
+            "@type": "ProfilePage",
+            "mainEntity": {
+              "@type": "Person",
+              "name": "Mark Edzel Potane",
+              "alternateName": ["Mark Potane", "Mpotane", "Edzel Potane"],
+              "description": "I am dedicated to assisting businesses in elevating their online presence and constructing web solutions that are both scalable and maintainable.",
+              "image": "/gt.jpg",
+            }
           }),
         }}
       />
