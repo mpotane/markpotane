@@ -26,13 +26,14 @@ export default function RootLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfilePage",
-            "mainEntity": {
+            mainEntity: {
               "@type": "Person",
-              "name": "Mark Edzel Potane",
-              "alternateName": ["Mark Potane", "Mpotane", "Edzel Potane"],
-              "description": "I am dedicated to assisting businesses in elevating their online presence and constructing web solutions that are both scalable and maintainable.",
-              "image": "/gt.jpg",
-            }
+              name: "Mark Edzel Potane",
+              alternateName: ["Mark Potane", "Mpotane", "Edzel Potane"],
+              description:
+                "I am dedicated to assisting businesses in elevating their online presence and constructing web solutions that are both scalable and maintainable.",
+              image: "/gt.jpg",
+            },
           }),
         }}
       />
