@@ -1,4 +1,5 @@
-import { SiGithub, SiHashnode, SiLinkedin, SiPolywork } from "react-icons/si";
+import { SiGithub, SiHashnode, SiLinkedin } from "react-icons/si";
+import { FcBiotech } from "react-icons/fc";
 
 export default function Contact() {
   return (
@@ -35,10 +36,10 @@ export default function Contact() {
             Blog
           </div>
         </a>
-        <a href="https://work.mpotane.com" target="_blank" rel="nofollow noopener">
+        <a href="https://www.biodrop.io/mpotane" target="_blank" rel="noreferrer noopener">
           <div className="flex flex-col justify-center items-center w-20 h-20">
             <div className="text-amber-600">
-              <SiPolywork size={25} />
+              <FcBiotech size={25} />
             </div>
             Work
           </div>
