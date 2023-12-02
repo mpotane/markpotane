@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Mark Edzel Potane | Personal Porfolio | SEO Specialist.",
   description:
     "Explore the profile of Mark Edzel Potane, a talented SEO Specialist and Software Engineer hailing from the Philippines.",
-  metadataBase: new URL("https://mpotane.com"),
+  metadataBase: new URL("https://www.mpotane.com"),
   alternates: {
     canonical: "/",
   },
