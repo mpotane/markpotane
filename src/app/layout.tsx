@@ -1,6 +1,7 @@
 import "./globals.css";
 import Script from "next/script";
 import { GeistSans } from "geist/font/sans";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export default function RootLayout({
   children,
@@ -26,37 +27,38 @@ export default function RootLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfilePage",
-            "dateCreated": "2023-11-29T00:00:00Z",
-            "dateModified": "2023-11-29T00:00:00Z",
-            "mainEntity": {
+            dateCreated: "2023-11-29T00:00:00Z",
+            dateModified: "2023-11-29T00:00:00Z",
+            mainEntity: {
               "@type": "Person",
-              "name": "Mark Edzel Potane",
-              "alternateName": "Mark Potane",
-              "identifier": "mpotane",
-              "interactionStatistic": [
+              name: "Mark Edzel Potane",
+              alternateName: "Mark Potane",
+              identifier: "mpotane",
+              interactionStatistic: [
                 {
                   "@type": "InteractionCounter",
-                  "interactionType": "https://schema.org/FollowAction",
-                  "userInteractionCount": 0
+                  interactionType: "https://schema.org/FollowAction",
+                  userInteractionCount: 0,
                 },
                 {
                   "@type": "InteractionCounter",
-                  "interactionType": "https://schema.org/LikeAction",
-                  "userInteractionCount": 0
-                }
+                  interactionType: "https://schema.org/LikeAction",
+                  userInteractionCount: 0,
+                },
               ],
-              "agentInteractionStatistic": {
+              agentInteractionStatistic: {
                 "@type": "InteractionCounter",
-                "interactionType": "https://schema.org/WriteAction",
-                "userInteractionCount": 0
+                interactionType: "https://schema.org/WriteAction",
+                userInteractionCount: 0,
               },
-              "description": "I am dedicated to assisting businesses in elevating their online presence and constructing web solutions that are both scalable and maintainable.",
-              "image": "/gt.jpg",
-              "sameAs": [
+              description:
+                "I am dedicated to assisting businesses in elevating their online presence and constructing web solutions that are both scalable and maintainable.",
+              image: "/gt.jpg",
+              sameAs: [
                 "https://www.linkedin.com/in/mpotane/",
-                "https://twitter.com/mpotanedev"
-              ]
-            }
+                "https://twitter.com/mpotanedev",
+              ],
+            },
           }),
         }}
       />
@@ -69,7 +71,14 @@ export default function RootLayout({
             className="hidden invisible"
           ></iframe>
         </noscript>
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,6 +1,14 @@
 import { TbGitFork, TbStar } from "react-icons/tb";
 import { getClient } from "@/lib/client";
 import { gql } from "@apollo/client";
+import { Badge } from "./ui/badge";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardFooter,
+} from "./ui/card";
 
 type ProjectProps = {
   id: string;
@@ -15,7 +23,7 @@ type ProjectProps = {
           name: string;
           color: string;
         };
-      },
+      }
     ];
   };
   url: string;
@@ -65,22 +73,24 @@ export default async function Project() {
         <div className="grid grid-cols-1 gap-2 my-0.5">
           {data.viewer.pinnedItems.edges.map(
             ({ node }: { node: ProjectProps }) => (
-              <div key={node.id} className="card text-slate-300 border border-neutral rounded">
-                <div className="card-body">
-                  <span className="card-title">
-                    <a
-                      className="font-extrabold inline-block relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-green-600 before:via-sky-400 before:to-purple-500 hover:before:w-full hover:before:opacity-100"
-                      target="_blank"
-                      href={node.url}
-                      rel="noreferrer"
-                    >
-                      {node.name}
-                    </a>
-                    <div className="badge badge-error">NEW</div>
-                  </span>
-                  <p>{node.description}</p>
+              <div key={node.id} className="text-slate-300">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex gap-2 justify-start items-center">
+                      <a
+                        className="font-extrabold inline-block relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-green-600 before:via-sky-400 before:to-purple-500 hover:before:w-full hover:before:opacity-100"
+                        target="_blank"
+                        href={node.url}
+                        rel="noreferrer"
+                      >
+                        {node.name}
+                      </a>{" "}
+                      <Badge variant="destructive">NEW</Badge>
+                    </CardTitle>
+                    <CardDescription>{node.description}</CardDescription>
+                  </CardHeader>
                   {node.languages.edges[0].node.name && (
-                    <div className="flex justify-between items-center px-1 py-3">
+                    <CardFooter className="flex justify-between items-center px-7 py-3">
                       <div className="grid grid-cols-2 gap-2 place-items-center">
                         <div className="grid grid-cols-2 place-items-center text-purple-400">
                           <TbStar />
@@ -91,19 +101,19 @@ export default async function Project() {
                           <span className="text-sm">{node.forkCount}</span>
                         </div>
                       </div>
-                      <div
-                        className="badge badge-outline border-2"
+                      <Badge
+                        variant="outline"
                         style={{
                           borderColor: node.languages.edges[0].node.color,
                         }}
                       >
                         {node.languages.edges[0].node.name}
-                      </div>
-                    </div>
+                      </Badge>
+                    </CardFooter>
                   )}
-                </div>
+                </Card>
               </div>
-            ),
+            )
           )}
         </div>
       )}

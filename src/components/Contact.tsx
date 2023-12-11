@@ -1,5 +1,6 @@
 import { SiGithub, SiHashnode, SiLinkedin } from "react-icons/si";
 import { FcBiotech } from "react-icons/fc";
+import { Card } from "./ui/card";
 
 export default function Contact() {
   return (
@@ -7,7 +8,7 @@ export default function Contact() {
       <div className="px-5">
         <h2>📣 Socials</h2>
       </div>
-      <div className="flex flex-wrap justify-start items-center gap-2 p-5 border border-neutral rounded">
+      <Card className="flex flex-wrap justify-start items-center gap-2 p-5">
         <a
           href="https://www.linkedin.com/in/mpotane/"
           target="_blank"
@@ -44,7 +45,7 @@ export default function Contact() {
             Work
           </div>
         </a>
-      </div>
+      </Card>
     </section>
   );
 }

@@ -6,6 +6,7 @@ import {
   SiVercel,
   SiSemrush,
 } from "react-icons/si";
+import { Card } from "./ui/card";
 
 export default function TeckStack() {
   return (
@@ -13,7 +14,7 @@ export default function TeckStack() {
       <div className="px-5">
         <h2>🛠️ Tools and Technology</h2>
       </div>
-      <div className="flex flex-wrap justify-start items-center gap-2 p-5 border border-neutral rounded">
+      <Card className="flex flex-wrap justify-start items-center gap-2 p-5">
         <div className="flex flex-col justify-center items-center w-32 h-20">
           <div className="text-white">
             <TbBrandNextjs size={25} />
@@ -50,7 +51,7 @@ export default function TeckStack() {
           </div>
           Vercel
         </div>
-      </div>
+      </Card>
     </section>
   );
 }

@@ -1,19 +1,17 @@
 import Image from "next/image";
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 export default function Hero() {
   return (
     <section>
       <div className="flex justify-center items-center gap-5 p-5 bg-base-100">
-        <div className="avatar">
-          <div className="w-20 rounded-full">
-            <Image
+        <Avatar className="w-20 h-20">
+            <AvatarImage
               src="/gt.jpg"
               alt="mpotane profile"
-              width={400}
-              height={400}
             />
-          </div>
-        </div>
+            <AvatarFallback>MP</AvatarFallback>
+        </Avatar>
         <div>
           <h1 className="text-slate-50 font-medium">Mark Edzel Potane</h1>
           <p>

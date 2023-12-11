@@ -1,4 +1,5 @@
 import { HiArrowUpRight } from "react-icons/hi2";
+import { Card } from "./ui/card";
 
 const data = [
   {
@@ -30,7 +31,7 @@ export default function Blog() {
       <div className="pl-6 mb-[.15rem]">
         <h3>📝 Blogs</h3>
       </div>
-      <div className="flex flex-col pl-6 pr-5 py-9 gap-2 border border-neutral rounded lg:h-[95.5%]">
+      <Card className="flex flex-col pl-6 pr-5 py-9 gap-2 lg:h-[94.5%]">
         {data.map((item) => (
           <a
             key={item.title}
@@ -43,7 +44,7 @@ export default function Blog() {
             <HiArrowUpRight className="inline-block ml-1" size={7} />
           </a>
         ))}
-      </div>
+      </Card>
     </section>
   );
 }
