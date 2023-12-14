@@ -4,23 +4,17 @@ import { Card } from "./ui/card";
 const data = [
   {
     title: "Tips: How to Fetch Data on the Client Side with Next.js",
-    url: "https://mpotane.hashnode.dev/tips-how-to-fetch-data-on-the-client-side-with-nextjs",
+    url: "https://blog.mpotane.com/2023/12/tips-how-to-fetch-data-on-client-side.html",
     color: "text-sky-500",
   },
   {
     title: "How to set up fish-shell in WSL 2",
-    url: "https://mpotane.hashnode.dev/how-to-set-up-fish-shell-in-wsl-2",
+    url: "https://blog.mpotane.com/2023/12/how-to-set-up-fish-shell-in-wsl-2.html",
     color: "text-yellow-500",
   },
   {
-    title: "How to setup development environment: Tips and Tricks",
-    url: "https://mpotane.hashnode.dev/how-to-setup-development-environment-tips-and-tricks",
-    color: "text-pink-300",
-  },
-  {
-    title:
-      "Neovim: Learn How to Install and Configure Copilot",
-    url: "https://mpotane.hashnode.dev/neovim-learn-how-to-install-and-configure-copilot",
+    title: "Neovim: Learn How to Install and Configure Copilot",
+    url: "https://blog.mpotane.com/2023/12/neovim-learn-how-to-install-and.html",
     color: "text-violet-300",
   },
 ];
