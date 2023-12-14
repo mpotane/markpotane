@@ -1,4 +1,4 @@
-import { SiGithub, SiHashnode, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiBlogger } from "react-icons/si";
 import { FcBiotech } from "react-icons/fc";
 import { Card } from "./ui/card";
 
@@ -32,7 +32,7 @@ export default function Contact() {
         <a href="https://blog.mpotane.com" target="_blank" rel="noreferrer noopener">
           <div className="flex flex-col justify-center items-center w-20 h-20">
             <div className="text-blue-700">
-              <SiHashnode size={25} />
+              <SiBlogger size={25} />
             </div>
             Blog
           </div>
