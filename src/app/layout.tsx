@@ -20,48 +20,6 @@ export default function RootLayout({
     })(window,document,'script','dataLayer','GTM-N2L95B2T');`,
         }}
       />
-      <Script
-        id="website-structured-data"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfilePage",
-            dateCreated: "2023-11-29T00:00:00Z",
-            dateModified: "2023-11-29T00:00:00Z",
-            mainEntity: {
-              "@type": "Person",
-              name: "Mark Edzel Potane",
-              alternateName: "Mark Potane",
-              identifier: "mpotane",
-              interactionStatistic: [
-                {
-                  "@type": "InteractionCounter",
-                  interactionType: "https://schema.org/FollowAction",
-                  userInteractionCount: 0,
-                },
-                {
-                  "@type": "InteractionCounter",
-                  interactionType: "https://schema.org/LikeAction",
-                  userInteractionCount: 0,
-                },
-              ],
-              agentInteractionStatistic: {
-                "@type": "InteractionCounter",
-                interactionType: "https://schema.org/WriteAction",
-                userInteractionCount: 0,
-              },
-              description:
-                "I am dedicated to assisting businesses in elevating their online presence and constructing web solutions that are both scalable and maintainable.",
-              image: "/gt.jpg",
-              sameAs: [
-                "https://www.linkedin.com/in/mpotane/",
-                "https://twitter.com/mpotanedev",
-              ],
-            },
-          }),
-        }}
-      />
       <body className={`${GeistSans.variable} font-sans`}>
         <noscript>
           <iframe

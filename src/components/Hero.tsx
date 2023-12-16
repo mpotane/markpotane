@@ -14,8 +14,8 @@ export default function Hero() {
         </Avatar>
         <div>
           <h1 className="text-slate-50 font-medium">Mark Edzel Potane</h1>
-          <p>
-            I specialize in SEO and also have a background in software
+          <p className="text-slate-300 text-sm">
+            We specialize in SEO and also have a background in software
             engineering. I assist businesses in enhancing their online presence
             and building scalable and maintainable web solutions.{" "}
           </p>
