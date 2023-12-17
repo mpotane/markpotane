@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="space-y-2 text-sm ml-5">
+        <div className="space-y-2 text-sm md:ml-5">
           <p className="text-base font-bold tracking-wide">Contacts</p>
           <div className="flex">
             <p className="mr-1 text-slate-300">Phone:</p>
