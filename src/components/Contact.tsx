@@ -31,7 +31,7 @@ export default function Contact() {
         </a>
         <a href="https://blog.mpotane.com" target="_blank" rel="noreferrer noopener">
           <div className="flex flex-col justify-center items-center w-20 h-20">
-            <div className="text-blue-700">
+            <div className="text-orange-500">
               <SiBlogger size={25} />
             </div>
             Blog
