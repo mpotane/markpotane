@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="flex">
             <p className="mr-1 text-slate-300">Phone:</p>
             <a
-              href="tel:850-123-5021"
+              href="tel:+639490059000"
               aria-label="Our phone"
               title="Our phone"
               className="transition-colors duration-300 hover:text-orange-400"
@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="flex">
             <p className="mr-1 text-slate-300">Email:</p>
             <a
-              href="mailto:info@lorem.mail"
+              href="mailto:connect@mpotane.com"
               aria-label="Our email"
               title="Our email"
               className="transition-colors duration-300 hover:text-orange-400"
@@ -47,14 +47,14 @@ export default function Footer() {
           <div className="flex">
             <p className="mr-1 text-slate-300">Address:</p>
             <a
-              href="https://www.google.com/maps"
+              href="https://maps.app.goo.gl/WhgR7jgKPFZyaczs7"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Our address"
               title="Our address"
               className="transition-colors duration-300 hover:text-orange-400"
             >
-              Ma-A, Davao City
+              Davao City Philippines
             </a>
           </div>
         </div>
