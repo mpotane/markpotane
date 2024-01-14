@@ -17,6 +17,11 @@ const data = [
     url: "https://blog.mpotane.com/2023/12/neovim-learn-how-to-install-and.html",
     color: "text-violet-300",
   },
+  {
+    title: "From Miles to Kilometers: Exploring Google's Android Earthquake Alert System",
+    url : "https://blog.mpotane.com/2023/12/from-miles-to-kilometers-exploring.html",
+    color: "text-teal-500",
+  }
 ];
 
 export default function Blog() {
@@ -32,7 +37,7 @@ export default function Blog() {
             className={`link ${item.color} link-hover`}
             href={item.url}
             target="_blank"
-            rel="noreferrer nofollow"
+            rel="noreferrer"
           >
             {item.title}
             <HiArrowUpRight className="inline-block ml-1" size={7} />
