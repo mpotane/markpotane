@@ -11,11 +11,9 @@ export default function Hero() {
         <div>
           <h1 className="text-slate-50 font-medium">Mark Edzel Potane</h1>
           <p className="text-slate-300 text-sm">
-            With our expertise in both SEO and software engineering, we are
-            uniquely positioned to help businesses thrive in the digital
-            landscape. Our team is dedicated to improving your online visibility
-            and creating robust web solutions that can grow and adapt with your
-            business.
+            I&apos;m a Software Engineer with a strong background in SEO. I
+            specialize in building scalable web applications that are optimized
+            for both user experience and search engine visibility.
           </p>
         </div>
       </div>

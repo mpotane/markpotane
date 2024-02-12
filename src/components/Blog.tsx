@@ -3,6 +3,11 @@ import { Card } from "./ui/card";
 
 const data = [
   {
+    title: "Cafe Drinks: A Comprehensive Guide",
+    url: "https://blog.mpotane.com/2024/01/cafe-drinks-comprehensive-guide.html",
+    color: "text-pink-500",
+  },
+  {
     title: "Tips: How to Fetch Data on the Client Side with Next.js",
     url: "https://blog.mpotane.com/2023/12/tips-how-to-fetch-data-on-client-side.html",
     color: "text-sky-500",
