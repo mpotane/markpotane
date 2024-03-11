@@ -3,11 +3,6 @@ import { Card } from "./ui/card";
 
 const data = [
   {
-    title: "Cafe Drinks: A Comprehensive Guide",
-    url: "https://blog.mpotane.com/2024/01/cafe-drinks-comprehensive-guide.html",
-    color: "text-pink-500",
-  },
-  {
     title: "Tips: How to Fetch Data on the Client Side with Next.js",
     url: "https://blog.mpotane.com/2023/12/tips-how-to-fetch-data-on-client-side.html",
     color: "text-sky-500",
@@ -22,11 +17,6 @@ const data = [
     url: "https://blog.mpotane.com/2023/12/neovim-learn-how-to-install-and.html",
     color: "text-violet-300",
   },
-  {
-    title: "From Miles to Kilometers: Exploring Google's Android Earthquake Alert System",
-    url : "https://blog.mpotane.com/2023/12/from-miles-to-kilometers-exploring.html",
-    color: "text-teal-500",
-  }
 ];
 
 export default function Blog() {
