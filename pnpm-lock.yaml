@@ -9,8 +9,8 @@ dependencies:
     specifier: latest
     version: 3.8.8(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
   '@apollo/experimental-nextjs-app-support':
-    specifier: ^0.8.0
-    version: 0.8.0(@apollo/client@3.8.8)(next@14.1.3)(react@18.2.0)
+    specifier: ^0.9.0
+    version: 0.9.0(@apollo/client@3.8.8)(next@14.1.3)(react@18.2.0)
   '@radix-ui/react-avatar':
     specifier: ^1.0.4
     version: 1.0.4(@types/react-dom@18.2.19)(@types/react@18.2.60)(react-dom@18.2.0)(react@18.2.0)
@@ -91,6 +91,18 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
+  /@apollo/client-react-streaming@0.9.0(@apollo/client@3.8.8)(react@18.2.0):
+    resolution: {integrity: sha512-cuOwhUeGWdHqbwKhr14xx5m2MS9QYB7cPAyr8FZvbCYQ44HpwBUJgPkwy4A7WBvPHkQ1gOMua5izzno6Hwlzlw==}
+    peerDependencies:
+      '@apollo/client': ^3.9.6
+      react: ^18
+    dependencies:
+      '@apollo/client': 3.8.8(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      superjson: 1.13.3
+      ts-invariant: 0.10.3
+    dev: false
+
   /@apollo/client@3.8.8(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-omjd9ryGDkadZrKW6l5ktUAdS4SNaFOccYQ4ZST0HLW83y8kQaSZOCTNlpkoBUK8cv6qP8+AxOKwLm2ho8qQ+Q==}
     peerDependencies:
@@ -126,19 +138,17 @@ packages:
       zen-observable-ts: 1.2.5
     dev: false
 
-  /@apollo/experimental-nextjs-app-support@0.8.0(@apollo/client@3.8.8)(next@14.1.3)(react@18.2.0):
-    resolution: {integrity: sha512-uyNIkOkew0T6ukC8ycbWBeTu8gtDSD5i+NVGEHU0DIEQaToFHObYcvIxaQ/8hvWzgvnpNU/KMsApfGXA9Xkpyw==}
+  /@apollo/experimental-nextjs-app-support@0.9.0(@apollo/client@3.8.8)(next@14.1.3)(react@18.2.0):
+    resolution: {integrity: sha512-w/iWbNKnnDFsbv65B3kFKJXIelhPRMPnzdsWmtDeDIZ1vhL468eRWBsgWIkg4WX+55EGp1GJRQx1WO15+dTE4w==}
     peerDependencies:
-      '@apollo/client': ^3.9.0
+      '@apollo/client': ^3.9.6
       next: ^13.4.1 || ^14.0.0
       react: ^18
     dependencies:
       '@apollo/client': 3.8.8(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@apollo/client-react-streaming': 0.9.0(@apollo/client@3.8.8)(react@18.2.0)
       next: 14.1.3(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      server-only: 0.0.1
-      superjson: 1.13.3
-      ts-invariant: 0.10.3
     dev: false
 
   /@babel/runtime@7.23.6:
@@ -2570,10 +2580,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-    dev: false
-
-  /server-only@0.0.1:
-    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /set-function-length@1.1.1:
