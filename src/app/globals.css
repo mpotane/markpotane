@@ -49,6 +49,11 @@ h6 {
   isolation: isolate;
 }
 
+ul {
+  list-style-type: circle;
+  padding-left: 1rem;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
