@@ -67,7 +67,7 @@ export default async function Project() {
   return (
     <section className="col-span-2">
       <div className="px-8">
-        <h3>📦 Projects and Repositories</h3>
+        <h3>📦 Personal Projects</h3>
       </div>
       {data && (
         <div className="grid grid-cols-1 gap-2 my-0.5">
@@ -85,7 +85,7 @@ export default async function Project() {
                       >
                         {node.name}
                       </a>{" "}
-                      <Badge variant="destructive">NEW</Badge>
+                      <Badge variant="destructive">Pin</Badge>
                     </CardTitle>
                     <CardDescription>{node.description}</CardDescription>
                   </CardHeader>
