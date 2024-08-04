@@ -3,14 +3,14 @@
 
 import { HttpLink } from "@apollo/client";
 import {
-  NextSSRApolloClient,
-  NextSSRInMemoryCache,
-} from "@apollo/experimental-nextjs-app-support/ssr";
-import { registerApolloClient } from "@apollo/experimental-nextjs-app-support/rsc";
+  registerApolloClient,
+  ApolloClient,
+  InMemoryCache,
+} from "@apollo/experimental-nextjs-app-support";
 
 export const { getClient } = registerApolloClient(() => {
-  return new NextSSRApolloClient({
-    cache: new NextSSRInMemoryCache(),
+  return new ApolloClient({
+    cache: new InMemoryCache(),
     link: new HttpLink({
       uri: "https://api.github.com/graphql",
       // you can disable result caching here if you want to
