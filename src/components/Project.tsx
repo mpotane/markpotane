@@ -1,5 +1,5 @@
 import { TbGitFork, TbStar } from "react-icons/tb";
-import { getClient } from "@/lib/client";
+import { query } from "@/lib/client";
 import { gql } from "@apollo/client";
 import { Badge } from "./ui/badge";
 import {
@@ -60,7 +60,7 @@ const getProjects = gql`
 `;
 
 export default async function Project() {
-  const { data } = await getClient().query({
+  const { data } = await query({
     query: getProjects,
   });
 
