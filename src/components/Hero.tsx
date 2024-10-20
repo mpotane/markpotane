@@ -1,4 +1,7 @@
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+import { Button } from "./ui/button";
+import { SiGmail } from "react-icons/si";
+import { MdOutlinePhoneIphone } from "react-icons/md";
 
 export default function Hero() {
   return (
@@ -14,26 +17,22 @@ export default function Hero() {
             I&apos;m a Software Engineer with a strong background in SEO. I
             specialize in building scalable web applications that are optimized
             for both user experience and search engine visibility.
-            <ul>
-              <li>
-                <a
-                  className="hover:underline hover:decoration-lime-500"
-                  href="mailto:yanexrequilme@gmail.com"
-                >
-                  yanexrequilme@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:underline hover:decoration-cyan-500"
-                  href="tel:+639653865805"
-                >
-                  +(63) 965 3865 805
-                </a>
-              </li>
-            </ul>
           </p>
         </div>
+      </div>
+      <div className="flex gap-2 py-2 items-center justify-center">
+        <a
+          className="hover:underline hover:decoration-lime-500"
+          href="mailto:yanexrequilme@gmail.com"
+        >
+          <Button variant="outline"><SiGmail />Email</Button>
+        </a>
+        <a
+          className="hover:underline hover:decoration-cyan-500"
+          href="tel:+639653865805"
+        >
+          <Button variant="outline"><MdOutlinePhoneIphone />Call or Text</Button>
+        </a>
       </div>
     </section>
   );
