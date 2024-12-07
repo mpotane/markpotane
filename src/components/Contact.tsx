@@ -37,14 +37,6 @@ export default function Contact() {
             Blog
           </div>
         </a>
-        <a href="https://www.biodrop.io/mpotane" target="_blank" rel="noreferrer noopener">
-          <div className="flex flex-col justify-center items-center w-20 h-20">
-            <div className="text-amber-600">
-              <FcBiotech size={25} />
-            </div>
-            Work
-          </div>
-        </a>
       </Card>
     </section>
   );
