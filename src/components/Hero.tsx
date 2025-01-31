@@ -14,9 +14,8 @@ export default function Hero() {
         <div>
           <h1 className="text-slate-50 font-medium">Mark Edzel Potane</h1>
           <p className="text-slate-300 text-sm">
-            I&apos;m a Software Engineer with a strong background in SEO. I
-            specialize in building scalable web applications that are optimized
-            for both user experience and search engine visibility.
+            I&apos;m an SEO, PPC, GHL specialist with a strong background in Web Development.
+            I help businesses achieve their online goals through targeted SEO, PPC, and GHL campaigns, tailored to their specific needs.
           </p>
         </div>
       </div>
