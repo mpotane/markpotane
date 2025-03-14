@@ -14,10 +14,10 @@ importers:
     dependencies:
       '@apollo/client':
         specifier: ^3.11.8
-        version: 3.12.11(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)
+        version: 3.13.4(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)
       '@apollo/experimental-nextjs-app-support':
         specifier: ^0.11.5
-        version: 0.11.8(@apollo/client@3.12.11(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(graphql@16.10.0)(next@15.1.7(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614))(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
+        version: 0.11.11(@apollo/client@3.13.4(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(graphql@16.10.0)(next@15.1.7(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614))(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
       '@radix-ui/react-avatar':
         specifier: ^1.1.1
         version: 1.1.1(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react-dom@19.0.0)(types-react@19.0.0-rc.1)
@@ -95,16 +95,16 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@apollo/client-react-streaming@0.11.8':
-    resolution: {integrity: sha512-BEAHvAMSEt+dEMBY39hIoTDcOkjGJX473tlRudt3KnLE/R8eR0dKMtsaIAfWep1F9kvxv4oYR8MWUg20wj3qiA==}
+  '@apollo/client-react-streaming@0.11.11':
+    resolution: {integrity: sha512-h7u/D5GDq5mn2BXaWBiK9z+i90mzmBCnOeRt4Iarc1qwTt40Q4u2yEXPw8ma1BywZ2uLJyVuAb6EyA605eqeEQ==}
     peerDependencies:
       '@apollo/client': ^3.10.4
       graphql: ^16 || >=17.0.0-alpha.2
       react: ^18 || >=19.0.0-rc
       react-dom: ^18 || >=19.0.0-rc
 
-  '@apollo/client@3.12.11':
-    resolution: {integrity: sha512-1RppV9U3E6Uusl/33yGkZa+rXpkGU5iCstcYltwWjdTjoA/YBD2Yyu0aHy8J4uKfIExUgnMW1HJWn4A0E0rRsw==}
+  '@apollo/client@3.13.4':
+    resolution: {integrity: sha512-Ot3RaN2M/rhIKDqXBdOVlN0dQbHydUrYJ9lTxkvd6x7W1pAjwduUccfoz2gsO4U9by7oWtRj/ySF0MFNUp+9Aw==}
     peerDependencies:
       graphql: ^15.0.0 || ^16.0.0
       graphql-ws: ^5.5.5 || ^6.0.3
@@ -121,8 +121,8 @@ packages:
       subscriptions-transport-ws:
         optional: true
 
-  '@apollo/experimental-nextjs-app-support@0.11.8':
-    resolution: {integrity: sha512-p+dbOKu3Qas0knlPVOKwc4vCwYOUgCJcmyxHGIVZAjoCRk8XVVFInLIiS6WrES8yL69QTRw1Dn2BtDymyFLofw==}
+  '@apollo/experimental-nextjs-app-support@0.11.11':
+    resolution: {integrity: sha512-q/vtKn2V9NE1YPU7WpPx2PGpLsYSGwRcPy8pa90glrHqlEVVqTWTGraDLe3wG0K/0NnnO1U4IcFoRYKoBfjRag==}
     peerDependencies:
       '@apollo/client': ^3.10.4
       next: ^13.4.1 || ^14.0.0 || ^15.0.0-rc.0
@@ -1917,15 +1917,16 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@apollo/client-react-streaming@0.11.8(@apollo/client@3.12.11(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
+  '@apollo/client-react-streaming@0.11.11(@apollo/client@3.13.4(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
     dependencies:
-      '@apollo/client': 3.12.11(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)
+      '@apollo/client': 3.13.4(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)
+      '@wry/equality': 0.5.7
       graphql: 16.10.0
       react: 19.0.0-rc-fb9a90fa48-20240614
       react-dom: 19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614)
       ts-invariant: 0.10.3
 
-  '@apollo/client@3.12.11(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)':
+  '@apollo/client@3.13.4(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
       '@wry/caches': 1.0.1
@@ -1947,10 +1948,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@apollo/experimental-nextjs-app-support@0.11.8(@apollo/client@3.12.11(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(graphql@16.10.0)(next@15.1.7(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614))(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
+  '@apollo/experimental-nextjs-app-support@0.11.11(@apollo/client@3.13.4(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(graphql@16.10.0)(next@15.1.7(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614))(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
     dependencies:
-      '@apollo/client': 3.12.11(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)
-      '@apollo/client-react-streaming': 0.11.8(@apollo/client@3.12.11(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
+      '@apollo/client': 3.13.4(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)
+      '@apollo/client-react-streaming': 0.11.11(@apollo/client@3.13.4(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(graphql@16.10.0)(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
       next: 15.1.7(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
       react: 19.0.0-rc-fb9a90fa48-20240614
     transitivePeerDependencies:
