@@ -6,7 +6,7 @@ import {
   registerApolloClient,
   ApolloClient,
   InMemoryCache,
-} from "@apollo/experimental-nextjs-app-support";
+} from "@apollo/client-integration-nextjs";
 
 export const { query } = registerApolloClient(() => {
   return new ApolloClient({
