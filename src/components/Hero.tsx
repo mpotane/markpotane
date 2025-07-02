@@ -14,7 +14,7 @@ export default function Hero() {
         <div>
           <h1 className="text-slate-50 font-medium">Mark Edzel Potane</h1>
           <p className="text-slate-300 text-sm">
-            A digital marketing specialist (SEO, PPC, GHL) with a strong background in Web Development.
+            A digital marketing specialist with a strong background in Web Development.
             I help businesses achieve their online goals through targeted SEO, PPC, and GHL campaigns, tailored to their specific needs.
           </p>
         </div>
