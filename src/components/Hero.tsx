@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="flex gap-2 py-2 items-center justify-center">
         <a
           className="hover:underline hover:decoration-lime-500"
-          href="mailto:yanexrequilme@gmail.com"
+          href="mailto:markpotanecc@gmail.com"
         >
           <Button variant="outline"><SiGmail />Email</Button>
         </a>
