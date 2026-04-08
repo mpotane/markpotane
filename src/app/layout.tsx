@@ -2,6 +2,7 @@ import "./globals.css";
 import Script from "next/script";
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/Header";
 
 export default function RootLayout({
   children,
@@ -34,6 +35,7 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>

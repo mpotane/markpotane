@@ -5,7 +5,7 @@ import { MdOutlinePhoneIphone } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="about">
       <div className="flex justify-center items-center gap-5 p-5 bg-base-100">
         <Avatar className="w-20 h-20">
           <AvatarImage src="/gt.jpg" alt="mpotane profile" />
