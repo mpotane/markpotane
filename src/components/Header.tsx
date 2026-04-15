@@ -8,8 +8,8 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-700 bg-background/80 backdrop-blur-sm">
-      <nav className="container max-w-screen-md mx-auto px-5 py-3 flex items-center gap-6">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+      <nav className="flex items-center gap-6 px-5 py-2.5 rounded-full border border-gray-700 bg-background/80 backdrop-blur-sm shadow-lg">
         {navLinks.map(({ label, href, external }) =>
           external ? (
             <a
